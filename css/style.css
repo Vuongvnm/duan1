@@ -150,7 +150,7 @@ body {
 
 /* hero section */
 #hero {
-  background-image: url("images/hero4.png");
+  background-image: url("../images/hero4.png");
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -171,7 +171,7 @@ body {
 }
 
 #hero button {
-  background-image: url("images/button.png");
+  background-image: url("../images/button.png");
   background-color: transparent;
   color: #088178;
   border: 0;
@@ -326,7 +326,7 @@ parent element (which is in #product1 .pro) to ensure "position: absolute" in ch
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("images/banners/b2.jpg");
+  background-image: url("../images/banners/b2.jpg");
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -364,7 +364,7 @@ parent element (which is in #product1 .pro) to ensure "position: absolute" in ch
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url("images/banners/b17.jpg");
+  background-image: url("../images/banners/b17.jpg");
   min-width: 650px;
   height: 50vh;
   background-size: cover;
@@ -373,7 +373,7 @@ parent element (which is in #product1 .pro) to ensure "position: absolute" in ch
 }
 
 #sm-banner .banner-box2 {
-  background-image: url("images/banners/b10.jpg");
+  background-image: url("../images/banners/b10.jpg");
 }
 
 #sm-banner h4 {
@@ -412,7 +412,7 @@ parent element (which is in #product1 .pro) to ensure "position: absolute" in ch
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url("images/banners/b7.jpg");
+  background-image: url("../images/banners/b7.jpg");
   min-width: 30%;
   height: 30vh;
   background-size: cover;
@@ -422,11 +422,11 @@ parent element (which is in #product1 .pro) to ensure "position: absolute" in ch
 }
 
 #banner3 .banner-box2 {
-  background-image: url("images/banners/b4.jpg");
+  background-image: url("../images/banners/b4.jpg");
 }
 
 #banner3 .banner-box3 {
-  background-image: url("images/banners/b18.jpg");
+  background-image: url("../images/banners/b18.jpg");
 }
 
 #banner3 h2 {
@@ -446,7 +446,7 @@ parent element (which is in #product1 .pro) to ensure "position: absolute" in ch
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url("images/banners/b14.png");
+  background-image: url("../images/banners/b14.png");
   background-repeat: no-repeat;
   background-position: 20% 30%;
   background-color: #041e42;
@@ -561,7 +561,7 @@ footer .copyright {
 /* Start shop page */
 
 #page-header {
-  background-image: url("images/banners/b1.jpg");
+  background-image: url("../images/banners/b1.jpg");
   width: 100%;
   height: 40vh;
   background-size: cover;
