@@ -3,5 +3,5 @@
   if(isset($_GET['id_dm'])) {
     xoa_danhmuc($_GET['id_dm']);
   }
-  header('Location: index.php?action=danhsach_danhmuc.php');
+  header('Location: index.php?action=danhsach_danhmuc');
 ?>

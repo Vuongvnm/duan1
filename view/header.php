@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce Website</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../duan1/css/style.css" />
     <script
       src="https://kit.fontawesome.com/47e370afdb.js"
       crossorigin="anonymous"
@@ -13,7 +13,7 @@
   <body>
     <!--header-->
     <section id="header">
-      <a href=""><img src="../images/logo1.png" class="logo" alt=""></a>
+      <a href=""><img src="./images/logo1.png" class="logo" alt=""></a>
 
       <ul id="navbar">
         <li><a class="active" href="index.html">Home</a></li>
