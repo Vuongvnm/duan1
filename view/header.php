@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce Website</title>
-    <link rel="stylesheet" href="../duan1/assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <script
       src="https://kit.fontawesome.com/47e370afdb.js"
       crossorigin="anonymous"
@@ -13,7 +13,7 @@
   <body>
     <!--header-->
     <section id="header">
-      <a href=""><img src="../duan1/assets/images/logo1.png" class="logo" alt=""></a>
+      <a href=""><img src="./assets/images/logo1.png" class="logo" alt=""></a>
 
       <ul id="navbar">
         <li><a class="active" href="index.html">Home</a></li>
@@ -42,27 +42,27 @@
     <!--feature-->
     <section id="feature" class="section-p1">
       <div class="fe-box">
-        <img src="../duan1/assets/images/features/f1.png" alt="" />
+        <img src="./assets/images/features/f1.png" alt="" />
         <h6>Free Shipping</h6>
       </div>
       <div class="fe-box">
-        <img src="../duan1/assets/images/features/f2.png" alt="" />
+        <img src="./assets/images/features/f2.png" alt="" />
         <h6>Online Order</h6>
       </div>
       <div class="fe-box">
-        <img src="../duan1/assets/images/features/f3.png" alt="" />
+        <img src="./assets/images/features/f3.png" alt="" />
         <h6>Save Money</h6>
       </div>
       <div class="fe-box">
-        <img src="../duan1/assets/images/features/f4.png" alt="" />
+        <img src="./assets/images/features/f4.png" alt="" />
         <h6>Promotions</h6>
       </div>
       <div class="fe-box">
-        <img src="../duan1/assets/images/features/f5.png" alt="" />
+        <img src="./assets/images/features/f5.png" alt="" />
         <h6>Happy Sell</h6>
       </div>
       <div class="fe-box">
-        <img src="../duan1/assets/images/features/f6.png" alt="" />
+        <img src="./assets/images/features/f6.png" alt="" />
         <h6>F24/7 Support</h6>
       </div>
     </section>
