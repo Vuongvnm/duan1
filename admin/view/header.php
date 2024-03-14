@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
-  <link rel="stylesheet" href="../css/admin_style.css">
+  <link rel="stylesheet" href="../assets/css/admin_style.css">
 </head>
 <body>
   <div class="container" id="blur">
     <aside>
       <div class="top">
         <div class="logo">
-          <img src="../images/admin/logo1.png">
+          <img src="../assets/images/admin/logo1.png">
         </div>
         <div class="close" id="close-btn">
           <span class="material-symbols-outlined">close</span>
