@@ -70,6 +70,7 @@
         <tr>
           <th>Mã danh mục</th>
           <th>Tên danh mục</th>
+          <th>Chức năng</th>
           <th></th>
         </tr>
       </thead>

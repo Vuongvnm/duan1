@@ -1,5 +1,5 @@
 <?php
-  include "pdo.php";
+  include "../model/pdo.php";
   
   function hienthi_danhmuc() {
     $sql = "SELECT * FROM danh_muc ORDER BY id_dm DESC";
