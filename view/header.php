@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/bootstrap.js"></script>
     <script
       src="https://kit.fontawesome.com/47e370afdb.js"
       crossorigin="anonymous"

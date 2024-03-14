@@ -65,12 +65,13 @@
   <!-- End of insights -->
   <div class="recent-orders">
     <h2>Recent Orders</h2>
-    <table>
+    <table class="table_danhmuc">
       <thead>
         <tr>
           <th>Mã danh mục</th>
           <th>Tên danh mục</th>
           <th>Chức năng</th>
+          <th></th>
           <th></th>
         </tr>
       </thead>

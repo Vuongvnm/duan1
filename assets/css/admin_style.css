@@ -378,6 +378,12 @@ main table tbody td {
   color: var(--color-dark-variant);
 }
 
+main table thead th {
+  height: 2.8rem;
+  border-bottom: 2px solid var(--color-light);
+  color: var(--color-dark);
+}
+
 main table tbody tr:last-child td {
   border: none;
 }
