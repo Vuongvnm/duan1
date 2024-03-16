@@ -5,14 +5,14 @@
   } else {
     if(isset($_GET['action'])) {
       switch($_GET['action']) {
-        case 'danhsach_danhmuc':
-          include "controller/danhmuc/danhsach_danhmuc.php";
+        case 'danh_sach_danh_muc':
+          include "controller/danh_muc/danh_sach_danh_muc.php";
           break;
-        case 'them_danhmuc':
-          include "controller/danhmuc/them_danhmuc.php";
+        case 'them_danh_muc':
+          include "controller/danh_muc/them_danh_muc.php";
           break;
         case 'xoa_dm':
-          include "controller/danhmuc/xoa_danhmuc.php";
+          include "controller/danh_muc/xoa_danh_muc.php";
           break;
         default:
           break;  

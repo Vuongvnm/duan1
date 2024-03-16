@@ -70,14 +70,14 @@
         <tr>
           <th>Mã danh mục</th>
           <th>Tên danh mục</th>
-          <th>Chức năng</th>
+          <th colspan="2">Chức năng</th>
           <th></th>
           <th></th>
         </tr>
       </thead>
       <tbody>
         <?php
-          foreach($danhsach_danhmuc as $dsdm) {
+          foreach($danh_sach_danh_muc as $dsdm) {
         ?>
         <tr>  
           <td><?=$dsdm['id_dm']?></td>

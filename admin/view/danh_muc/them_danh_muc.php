@@ -75,7 +75,7 @@
       </thead>
       <tbody>
         <?php
-          foreach($danhsach_danhmuc as $dsdm) {
+          foreach($danh_sach_danh_muc as $dsdm) {
         ?>
         <tr>  
           <td><?=$dsdm['id_dm']?></td>

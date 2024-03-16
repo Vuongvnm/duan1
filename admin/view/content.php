@@ -15,7 +15,7 @@
             </div>
             <div class="progress">
               <svg>
-                <circle cx="38" cy="38" r="36"/>
+                <circle cx="40" cy="41" r="38"/>
               </svg>
               <div class="number">
                 <p>81%</p>

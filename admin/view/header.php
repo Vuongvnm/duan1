@@ -25,7 +25,7 @@
         <span class="material-symbols-outlined">home</span>
           <h3>Trang chủ</h3>
         </a>
-        <a href="index.php?action=danhsach_danhmuc" class="active">
+        <a href="index.php?action=danh_sach_danh_muc" class="active">
         <span class="material-symbols-outlined">view_compact</span>
           <h3>Danh mục</h3>
         </a>
