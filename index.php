@@ -1,7 +1,7 @@
 <?php
-  include "view/header.php";
+  require_once "view/header.php";
   if($_GET = []) {
-    include "view/content.php";
+    require_once "view/content.php";
   }
-  include "view/footer.php";
+  require_once "view/footer.php";
 ?>
