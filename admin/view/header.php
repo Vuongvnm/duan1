@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="sidebar">
-        <a href="#">
+        <a href="index.php">
         <span class="material-symbols-outlined">home</span>
           <h3>Trang chủ</h3>
         </a>
@@ -29,7 +29,7 @@
         <span class="material-symbols-outlined">view_compact</span>
           <h3>Danh mục</h3>
         </a>
-        <a href="#">
+        <a href="index.php?action=danh_sach_san_pham">
           <span class="material-symbols-outlined">receipt_long</span>
           <h3>Sản phẩm</h3>
         </a>

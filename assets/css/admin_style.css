@@ -69,6 +69,35 @@ body {
   grid-template-columns: 14rem auto 23rem;
 }
 
+
+.flex {
+  display: flex;
+  cursor: pointer;
+}
+
+.main_image {
+  width: 380px;
+  height: 380px;
+}
+
+.option img {
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+}
+
+h3 {
+  color: #6e3c36;
+  margin: 20px 0 20px 0;
+  font-size: 25px;
+}
+
+h5,
+p,
+small {
+  color: #6e3c36;
+}
+
 a {
   color: var(--color-dark);
 }
