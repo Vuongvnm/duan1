@@ -22,7 +22,7 @@
           <td><?=$dsdm['id_dm']?></td>
           <td><?=$dsdm['ten_dm']?></td>
           <td class="warning"><a href="index.php?action=sua_dm&id_dm=<?=$dsdm['id_dm']?>">Sửa</a></td>
-          <td class="primary"><a href="index.php?action=xoa_dm&id_dm=<?=$dsdm['id_dm']?>">Xóa</a></td>
+          <td class="primary"><a href="index.php?action=xoa_dm&id_dm=<?=$dsdm['id_dm']?>" onclick="return confirm('Bạn có muốn xóa không?')">Xóa</a></td>
           <td class="primary"><a href="index.php?action=chi_tiet_danh_muc&id_dm=<?=$dsdm['id_dm']?>">Chi tiết</a></td>
         </tr>
         <?php
