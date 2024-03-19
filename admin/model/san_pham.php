@@ -1,5 +1,5 @@
 <?php
-  require_once "../model/pdo.php";
+  require_once "./model/pdo.php";
 
   function hien_thi_san_pham() {
     $sql = "SELECT * FROM san_pham ORDER BY id_sp DESC";
@@ -11,8 +11,8 @@
     return pdo_query_one($sql);
   }
 
-  function them_san_pham($ten_sp, $gia_sp, $xuat_xu, $hinh_anh, $so_luong, $kich_co, $ghi_chu, $id_dm, $id_ms) {
-    $sql = "INSERT INTO san_pham (ten_sp, gia_sp, xuat_xu, hinh_anh, so_luong, kich_co, ghi_chu, id_dm, id_ms) VALUES ('$ten_sp', '$gia_sp', '$xuat_xu', '$hinh_anh', '$so_luong', '$kich_co', '$ghi_chu', '$id_dm', '$id_ms')";
+  function them_san_pham($ten_sp, $gia_sp, $xuat_xu, $hinh_anh, $so_luong, $ghi_chu, $id_dm, $id_ms, $id_kc) {
+    $sql = "INSERT INTO san_pham (ten_sp, gia_sp, xuat_xu, hinh_anh, so_luong, ghi_chu, id_dm, id_ms, id_kc) VALUES ('$ten_sp', '$gia_sp', '$xuat_xu', '$hinh_anh', '$so_luong', '$ghi_chu', '$id_dm', '$id_ms', '$id_kc')";
     pdo_execute($sql);
   }
 

@@ -3,26 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ecommerce Website</title>
+    <title>Shop thời trang BusyBees</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/bootstrap.js"></script>
-    <script
-      src="https://kit.fontawesome.com/47e370afdb.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/47e370afdb.js"crossorigin="anonymous"></script>
   </head>
   <body>
     <!--header-->
     <section id="header">
-      <a href=""><img src="./assets/images/logo1.png" class="logo" alt=""></a>
-
+      <a href=""><img src="./assets/images/logo1.png" class="logo"></a>
       <ul id="navbar">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="index.php">Trang chủ</a></li>
+        <li><a href="index.php?action=danh_sach_san_pham">Sản phẩm</a></li>
+        <li><a href="#">Bài viết</a></li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Liên hệ</a></li>
         <li id="lg-bar"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
         <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
       </ul>
@@ -31,7 +27,6 @@
         <i id="bar" class="fa-solid fa-outdent"></i>
       </div>
     </section>
-
     <!--hero-->
     <section id="hero">
       <h4>Trade-in-offer</h4>
@@ -40,31 +35,30 @@
       <p>Save more with coupons & up to 70% off!</p>
       <button>Shop Now</button>
     </section>
-
     <!--feature-->
     <section id="feature" class="section-p1">
       <div class="fe-box">
         <img src="./assets/images/features/f1.png" alt="" />
-        <h6>Free Shipping</h6>
+        <h6>Giao hàng miễn phí</h6>
       </div>
       <div class="fe-box">
         <img src="./assets/images/features/f2.png" alt="" />
-        <h6>Online Order</h6>
+        <h6>Đặt hàng online</h6>
       </div>
       <div class="fe-box">
         <img src="./assets/images/features/f3.png" alt="" />
-        <h6>Save Money</h6>
+        <h6>Tiết kiệm chi phí</h6>
       </div>
       <div class="fe-box">
         <img src="./assets/images/features/f4.png" alt="" />
-        <h6>Promotions</h6>
+        <h6>Tích điểm mua hàng</h6>
       </div>
       <div class="fe-box">
         <img src="./assets/images/features/f5.png" alt="" />
-        <h6>Happy Sell</h6>
+        <h6>Dịch vụ thân thiện</h6>
       </div>
       <div class="fe-box">
         <img src="./assets/images/features/f6.png" alt="" />
-        <h6>F24/7 Support</h6>
+        <h6>Hỗ trợ mọi lúc</h6>
       </div>
     </section>
