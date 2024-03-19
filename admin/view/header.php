@@ -33,9 +33,9 @@
           <span class="material-symbols-outlined">receipt_long</span>
           <h3>Sản phẩm</h3>
         </a>
-        <a href="#">
-          <span class="material-symbols-outlined">monitoring</span>
-          <h3>Analytics</h3>
+        <a href="index.php?action=danh_sach_mau_sac">
+        <span class="material-symbols-outlined">palette</span>
+          <h3>Màu sắc</h3>
         </a>
         <a href="#">
           <span class="material-symbols-outlined">mail</span>

@@ -46,6 +46,26 @@
           break;
         /* END SẢN PHẨM */
 
+        /* START MÀU SẮC */
+        case 'danh_sach_mau_sac':
+          require_once "controller/mau_sac/danh_sach_mau_sac.php";
+          break;
+        case 'chi_tiet_mau_sac':
+          require_once "controller/mau_sac/chi_tiet_mau_sac.php";
+          break;
+        case 'them_mau_sac':
+          require_once "controller/mau_sac/them_mau_sac.php";
+          break;
+        case 'xoa_ms':
+          require_once "controller/mau_sac/xoa_mau_sac.php";
+          break;
+        case 'sua_ms':
+          require_once "controller/mau_sac/sua_mau_sac.php";
+          break;
+        case 'cap_nhat_mau_sac':
+          require_once "controller/mau_sac/cap_nhat_mau_sac.php";
+        /* END MÀU SẮC */
+
         default:
           require_once "view/content.php";
           break;  
