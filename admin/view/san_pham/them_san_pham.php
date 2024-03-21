@@ -5,7 +5,7 @@
   <div class="recent-orders">
     <h2>Thêm sản phẩm</h2>
     <form action="index.php?action=them_san_pham" method="post" enctype="multipart/form-data">
-      <select class="form-select" multiple aria-label="Multiple select example" name="id_dm" required>
+      <select class="form-select" aria-label="Multiple select example" name="id_dm" required>
         <option selected>Danh mục</option>
         <?php
         foreach ($danh_sach_danh_muc as $dsdm) {
@@ -16,7 +16,7 @@
         ?>
       </select>
       <br>
-      <select class="form-select" multiple aria-label="Multiple select example" name="id_ms" required>
+      <select class="form-select" aria-label="Multiple select example" name="id_ms" required>
         <option selected>Màu sắc</option>
         <?php
         foreach ($danh_sach_mau_sac as $dsms) {
@@ -35,7 +35,7 @@
         <input type="number" class="form-control" id="floatingInput" name="gia_sp" placeholder="Giá sản phẩm" required>
         <label for="floatingInput">Giá sản phẩm</label>
       </div>
-      <select class="form-select" multiple aria-label="Multiple select example" name="id_kc" required>
+      <select class="form-select" aria-label="Multiple select example" name="id_kc" required>
         <option selected>Kích cỡ</option>
         <?php
         foreach ($hien_thi_kich_co as $kc) {

@@ -1,5 +1,5 @@
 <?php
-  require_once "../model/pdo.php";
+  require_once "../models/pdo.php";
   
   function danh_sach_mau_sac() {
     $sql = "SELECT * FROM mau_sac ORDER BY id_ms DESC";

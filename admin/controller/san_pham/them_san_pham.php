@@ -23,5 +23,6 @@
     them_san_pham($ten_sp, $gia_sp, $xuat_xu, $hinh_anh, $so_luong, $ghi_chu, $id_dm, $id_ms, $id_kc);
     echo "<script type='text/javascript'>alert('Thêm thành công!');</script>";
   }
+  error_reporting(E_ERROR | E_PARSE);
   header('Location: index.php?action=danh_sach_san_pham');
 ?>

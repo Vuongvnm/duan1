@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 19, 2024 at 02:54 AM
+-- Generation Time: Mar 21, 2024 at 02:28 AM
 -- Server version: 8.2.0
 -- PHP Version: 8.2.13
 
@@ -83,18 +83,18 @@ CREATE TABLE IF NOT EXISTS `danh_muc` (
   `id_dm` int NOT NULL AUTO_INCREMENT,
   `ten_dm` varchar(225) COLLATE utf8mb4_unicode_520_ci NOT NULL,
   PRIMARY KEY (`id_dm`)
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
 -- Dumping data for table `danh_muc`
 --
 
 INSERT INTO `danh_muc` (`id_dm`, `ten_dm`) VALUES
-(32, 'LV'),
 (33, 'Gucci'),
 (34, 'Prada'),
 (35, 'Michaels'),
-(36, 'Git');
+(36, 'Git'),
+(37, 'Gucci3');
 
 -- --------------------------------------------------------
 
@@ -130,6 +130,30 @@ CREATE TABLE IF NOT EXISTS `hoa_don` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `kich_co`
+--
+
+DROP TABLE IF EXISTS `kich_co`;
+CREATE TABLE IF NOT EXISTS `kich_co` (
+  `id_kc` int NOT NULL AUTO_INCREMENT,
+  `kich_co` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  PRIMARY KEY (`id_kc`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
+--
+-- Dumping data for table `kich_co`
+--
+
+INSERT INTO `kich_co` (`id_kc`, `kich_co`) VALUES
+(1, 'S'),
+(2, 'M'),
+(3, 'L'),
+(4, 'XL'),
+(5, 'XXL');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `lien_he`
 --
 
@@ -154,7 +178,22 @@ CREATE TABLE IF NOT EXISTS `mau_sac` (
   `id_ms` int NOT NULL AUTO_INCREMENT,
   `ten_ms` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
   PRIMARY KEY (`id_ms`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
+--
+-- Dumping data for table `mau_sac`
+--
+
+INSERT INTO `mau_sac` (`id_ms`, `ten_ms`) VALUES
+(19, 'Xanh'),
+(20, 'Đỏ'),
+(21, 'Tím'),
+(22, 'Hồng'),
+(23, 'Xanh nước biển'),
+(24, 'Vàng'),
+(25, 'Cam'),
+(26, 'Nâu'),
+(27, 'Đỏ thẫm 1');
 
 -- --------------------------------------------------------
 
@@ -170,16 +209,38 @@ CREATE TABLE IF NOT EXISTS `san_pham` (
   `xuat_xu` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `hinh_anh` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `so_luong` int NOT NULL,
-  `kich_co` int NOT NULL,
   `ghi_chu` text COLLATE utf8mb4_unicode_520_ci,
   `ngay_tao` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `ngay_cap_nhat` int DEFAULT NULL,
   `id_dm` int NOT NULL,
   `id_ms` int NOT NULL,
+  `id_kc` int NOT NULL,
   PRIMARY KEY (`id_sp`),
   KEY `fk_sanpham_danhmuc` (`id_dm`),
-  KEY `fk_sanpham_mausac` (`id_ms`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+  KEY `fk_sanpham_mausac` (`id_ms`),
+  KEY `fk_sanpham_kichco` (`id_kc`)
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
+--
+-- Dumping data for table `san_pham`
+--
+
+INSERT INTO `san_pham` (`id_sp`, `ten_sp`, `gia_sp`, `xuat_xu`, `hinh_anh`, `so_luong`, `ghi_chu`, `ngay_tao`, `ngay_cap_nhat`, `id_dm`, `id_ms`, `id_kc`) VALUES
+(29, 'Áo dài', 100000.00, 'Việt Nam', 'null', 10, 'null', '2024-03-19 10:51:51', NULL, 36, 19, 3),
+(30, 'Áo dài', 100000.00, 'Việt Nam', 'null', 10, 'null', '2024-03-19 10:51:59', NULL, 36, 19, 3),
+(31, 'Áo dài', 100000.00, 'Việt Nam', 'null', 10, 'null', '2024-03-19 10:51:59', NULL, 36, 19, 3),
+(32, 'Áo dài', 100000.00, 'Việt Nam', 'null', 10, 'null', '2024-03-19 10:51:59', NULL, 36, 19, 3),
+(33, 'Áo dài', 100000.00, 'Việt Nam', 'null', 10, 'null', '2024-03-19 10:51:59', NULL, 36, 19, 3),
+(34, 'Áo dài', 100000.00, 'Việt Nam', 'null', 10, 'null', '2024-03-19 10:51:59', NULL, 36, 19, 3),
+(35, 'Áo dài', 100000.00, 'Việt Nam', 'null', 10, 'null', '2024-03-19 10:51:59', NULL, 36, 19, 3),
+(36, 'Áo dài', 100000.00, 'Việt Nam', 'null', 10, 'null', '2024-03-19 10:51:59', NULL, 36, 19, 3),
+(37, 'Áo dài', 100000.00, 'Việt Nam', 'null', 10, 'null', '2024-03-19 10:51:59', NULL, 36, 19, 3),
+(38, 'Áo dài', 100000.00, 'Việt Nam', 'null', 10, 'null', '2024-03-19 10:51:59', NULL, 36, 19, 3),
+(39, 'Áo dài', 100000.00, 'Việt Nam', 'null', 10, 'null', '2024-03-19 10:51:59', NULL, 36, 19, 3),
+(40, 'Áo dài', 100000.00, 'Việt Nam', 'null', 10, 'null', '2024-03-19 10:51:59', NULL, 36, 19, 3),
+(43, 'Quần thun', 2000.00, 'Mỹ', 'Array', 80, 'Nope', '2024-03-19 11:17:32', NULL, 34, 26, 2),
+(44, 'Quần thun22', 2000.00, 'Mỹ', 'Array', 80, 'Nope', '2024-03-19 11:18:08', NULL, 34, 26, 2),
+(45, 'Quần thun22', 2000.00, 'Mỹ', 'Array', 80, 'Nope', '2024-03-19 11:25:53', NULL, 35, 26, 3);
 
 -- --------------------------------------------------------
 
@@ -190,9 +251,10 @@ CREATE TABLE IF NOT EXISTS `san_pham` (
 DROP TABLE IF EXISTS `tai_khoan`;
 CREATE TABLE IF NOT EXISTS `tai_khoan` (
   `id_tk` int NOT NULL AUTO_INCREMENT,
+  `ten_nguoi_dung` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `mat_khau` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `quyen` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `quyen` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
   PRIMARY KEY (`id_tk`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
@@ -224,6 +286,7 @@ CREATE TABLE IF NOT EXISTS `voucher` (
 --
 ALTER TABLE `san_pham`
   ADD CONSTRAINT `fk_sanpham_danhmuc` FOREIGN KEY (`id_dm`) REFERENCES `danh_muc` (`id_dm`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  ADD CONSTRAINT `fk_sanpham_kichco` FOREIGN KEY (`id_kc`) REFERENCES `kich_co` (`id_kc`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   ADD CONSTRAINT `fk_sanpham_mausac` FOREIGN KEY (`id_ms`) REFERENCES `mau_sac` (`id_ms`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 COMMIT;
 
