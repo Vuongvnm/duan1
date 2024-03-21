@@ -66,6 +66,26 @@
           require_once "controller/mau_sac/cap_nhat_mau_sac.php";
         /* END MÀU SẮC */
 
+        /* START VOUCHER */
+        case 'danh_sach_voucher':
+          require_once "controller/voucher/danh_sach_voucher.php";
+          break;
+        case 'chi_tiet_voucher':
+          require_once "controller/voucher/chi_tiet_voucher.php";
+          break;
+        case 'them_voucher':
+          require_once "controller/voucher/them_voucher.php";
+          break;
+        case 'xoa_voucher':
+          require_once "controller/voucher/xoa_voucher.php";
+          break; 
+        case 'sua_voucher':
+          require_once "controller/voucher/sua_voucher.php";
+          break;
+        case 'cap_nhat_voucher':
+          require_once "controller/voucher/cap_nhat_voucher.php";   
+          break;        
+        /* END VOUCHER */
         default:
           require_once "view/content.php";
           break;  
