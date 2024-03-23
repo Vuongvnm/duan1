@@ -107,6 +107,22 @@
           require_once "controller/voucher/cap_nhat_voucher.php";   
           break;        
         /* END VOUCHER */
+        
+
+        /* START HÓA ĐƠN */
+        case 'danh_sach_hoa_don':
+          require_once "controller/hoa_don/danh_sach_hoa_don.php";
+          break;
+        case 'sua_hoa_don':
+          require_once "controller/hoa_don/sua_hoa_don.php";
+          break;
+        case 'xoa_hoa_don':
+          require_once "controller/hoa_don/xoa_hoa_don.php";
+          break; 
+        case 'cap_nhat_hoa_don':
+          require_once "controller/hoa_don/cap_nhat_hoa_don.php";   
+          break;
+        /* END HÓA ĐƠN */
         default:
           require_once "view/content.php";
           break;  
