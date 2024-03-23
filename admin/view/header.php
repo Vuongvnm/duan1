@@ -43,6 +43,10 @@
             <h3>Tin Tức</h3>
           </a>
         </a>
+        <a href="index.php?action=danh_sach_hoa_don">
+        <span class="material-symbols-outlined">receipt_long</span>
+          <h3>Hóa đơn</h3>
+        </a>
         <a href="index.php?action=danh_sach_voucher">
         <span class="material-symbols-outlined">confirmation_number</span>
           <h3>Voucher</h3>
