@@ -66,6 +66,27 @@
           require_once "controller/mau_sac/cap_nhat_mau_sac.php";
         /* END MÀU SẮC */
 
+        /* START SẢN PHẨM */
+        case 'danh_sach_tin_tuc':
+          require_once "controller/tin_tuc/danh_sach_tin_tuc.php";
+          break;
+        case 'chi_tiet_tin_tuc':
+          require_once "controller/tin_tuc/chi_tiet_tin_tuc.php";
+          break;  
+        case 'them_bai_viet':
+          require_once "controller/tin_tuc/them_bai_viet.php";
+          break;  
+        case 'xoa_tt':
+          require_once "controller/tin_tuc/xoa_tin_tuc.php";
+          break;
+        case 'sua_tt':
+          require_once "controller/tin_tuc/sua_tin_tuc.php";
+          break; 
+        case 'cap_nhat_tin_tuc':
+          require_once "controller/tin_tuc/cap_nhat_tin_tuc.php";
+          break;
+        /* END SẢN PHẨM */
+
         /* START VOUCHER */
         case 'danh_sach_voucher':
           require_once "controller/voucher/danh_sach_voucher.php";

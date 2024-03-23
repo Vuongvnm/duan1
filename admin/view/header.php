@@ -50,9 +50,9 @@
           <span class="material-symbols-outlined">inventory</span>
           <h3>Products</h3>
         </a>
-        <a href="#">
+        <a href="index.php?action=danh_sach_tin_tuc">
           <span class="material-symbols-outlined">error</span>
-          <h3>Reports</h3>
+          <h3>Tin Tức</h3>
         </a>
         <a href="#">
           <span class="material-symbols-outlined">settings</span>

@@ -41,6 +41,7 @@
       <div class="form-floating">
         <button type="submit" class="btn btn-primary" name="them_moi">Thêm mới</button>
         <button type="reset" class="btn btn-secondary">Nhập lại</button>
+        <a href = "index.php?action=danh_sach_voucher" >Danh sách</a>
       </div>
     </form>
   </div>
