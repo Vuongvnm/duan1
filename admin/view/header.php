@@ -37,6 +37,10 @@
         <span class="material-symbols-outlined">palette</span>
           <h3>Màu sắc</h3>
         </a>
+        <a href="index.php?action=danh_sach_voucher">
+        <span class="material-symbols-outlined">confirmation_number</span>
+          <h3>Voucher</h3>
+        </a>
         <a href="#">
           <span class="material-symbols-outlined">mail</span>
           <h3>Messages</h3>
