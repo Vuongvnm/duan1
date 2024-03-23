@@ -21,7 +21,7 @@
         <?php
           foreach($danh_sach_san_pham as $dssp) {
             $hinh_anh = $dssp['hinh_anh'];
-            $hinh_path = "/DUAN1/assets/uploads/" . $hinh_anh;
+            $hinh_path = "../assets/uploads/" . $hinh_anh;
             if(is_file($hinh_path)) {
               $hinh = "<img src='".$hinh_path."' height='80'>";
             } else {
