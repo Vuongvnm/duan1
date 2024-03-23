@@ -1,21 +1,22 @@
 <main>
   <?php
-    if(is_array($mot_san_pham)){
-      $ten_sp = $mot_san_pham['ten_sp'];
-      $gia_sp = $mot_san_pham['gia_sp'];
-      $xuat_xu = $mot_san_pham['xuat_xu'];
-      $so_luong = $mot_san_pham['so_luong'];
-      $ghi_chu = $mot_san_pham['ghi_chu'];
-      $kich_co = $mot_san_pham['kich_co'];
-      $ngay_tao = $mot_san_pham['ngay_tao'];
-      $id_ms = $mot_san_pham['id_ms'];
-    ?>
+  if (is_array($mot_san_pham)) {
+    $id_sp = $mot_san_pham['id_sp'];
+    $ten_sp = $mot_san_pham['ten_sp'];
+    $gia_sp = $mot_san_pham['gia_sp'];
+    $xuat_xu = $mot_san_pham['xuat_xu'];
+    $so_luong = $mot_san_pham['so_luong'];
+    $ghi_chu = $mot_san_pham['ghi_chu'];
+    $ngay_tao = $mot_san_pham['ngay_tao'];
+    $ngay_cap_nhat = $mot_san_pham['ngay_cap_nhat'];
+    $id_ms = $mot_san_pham['id_ms'];
+  ?>
     <div class="recent-orders">
       <h2>Chi tiết sản phẩm</h2>
     </div>
-    <?php
-    }
-    ?>
+  <?php
+  }
+  ?>
   <section>
     <div class="container flex">
       <div class="left">
@@ -31,29 +32,63 @@
         </div>
       </div>
       <div class="right">
-        <h3>Tên sản phẩm: <?=$ten_sp?></h3>
-        <h4>Giá: <?=$gia_sp?> <small>VND</small></h4>
-        <h4>Xuất xứ: <?=$xuat_xu?></h4>
-        <h4>Số lượng: <?=$so_luong?> <small>chiếc</small></h4>
-        <h4>Ghi chú:</h4><p><?=$ghi_chu?></p>
+        <h3>Tên sản phẩm: <?= $ten_sp ?></h3>
+        <h4>Giá: <?= $gia_sp ?> <small>VND</small></h4>
+        <h4>Xuất xứ: <?= $xuat_xu ?></h4>
+        <h4>Số lượng: <?= $so_luong ?> <small>chiếc</small></h4>
+        <h4>Ghi chú: <?= $ghi_chu ?></h4>
         <?php
-          foreach ($danh_sach_mau_sac as $dsms) {
-            $id_ms = $dsms['id_ms'];
-            $ten_ms = $dsms['ten_ms'];
-            if ($id_ms == hien_thi_idms_by_idsp($id_sp)) {
-            ?>
-              <h4><?=$id_ms?></h4>
+        foreach ($danh_sach_mau_sac as $dsms) {
+          $id_ms = $dsms['id_ms'];
+          $ten_ms = $dsms['ten_ms'];
+          if ($id_ms == hien_thi_idms_by_idsp($id_sp)) {
+        ?>
+            <h4>Màu sắc: <?= $ten_ms ?></h4>
+          <?php
+          }
+          ?>
+        <?php
+        }
+        ?>
+        <?php
+        foreach ($hien_thi_kich_co as $kc) {
+          $id_kc = $kc['id_kc'];
+          $kich_co = $kc['kich_co'];
+          if ($id_kc == hien_thi_idkc_by_idsp($id_sp)) {
+        ?>
+            <h4>Kích cỡ: <?= $kich_co ?></h4>
+          <?php
+          }
+          ?>
+        <?php
+        }
+        ?>
+        <h4>Ngày tạo: <?= $ngay_tao ?></h4>
+        <?php
+        if ($ngay_cap_nhat) {
+        ?>
+          <h4>Ngày cập nhật: <?= $ngay_cap_nhat ?></h4>
+        <?php
+        } else {
+        ?>
+          <h4>Ngày cập nhật: Chưa cập nhật!</h4>
+        <?php
+        }
+        ?>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active" aria-disabled="true">Sản phẩm cùng loại</a>
+          <?php
+          foreach ($danh_sach_danh_muc as $dsdm) {
+            $id_dm = $dsdm['id_dm'];
+            if ($id_dm == hien_thi_iddm_by_idsp($id_sp)) {
+          ?>
+              <a href="#" class="list-group-item list-group-item-action"><?= $ten_sp ?></a>
             <?php
             }
             ?>
           <?php
           }
           ?>
-        <h4>Kích cỡ: <?=$kich_co?></h4>
-        <h4>Ngày tạo: <?=$ngay_tao?></h4>
-        <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active" aria-disabled="true">Sản phẩm cùng loại</a>
-        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
         </div>
       </div>
     </div>
@@ -62,6 +97,7 @@
     function img(anything) {
       document.querySelector('.slide').src = anything;
     }
+
     function change(change) {
       const line = document.querySelector('.home');
       line.style.background = change;
