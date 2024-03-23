@@ -68,15 +68,29 @@
           <div class="form-floating mb-3">
             <input type="file" class="form-control" id="floatingInput" name="hinh_anh" placeholder="Hình ảnh" value="<?=$hinh_path?>" required>
             <label for="floatingInput">Hình ảnh</label>
-            <img width="200" height="200" src="<?= $hinh_path ?>" alt="">
+            <img src="<?$hinh_path?>" class="img-fluid">
           </div>
           <div class="form-floating mb-3">
             <input type="number" class="form-control" id="floatingInput" name="so_luong" placeholder="Số lượng" value="<?=$mot_san_pham['so_luong']?>" required>
             <label for="floatingInput">Số lượng</label>
           </div>
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" name="kich_co" placeholder="Kích cỡ" value="<?=$mot_san_pham['kich_co']?>" required>
-            <label for="floatingInput">Kích cỡ</label>
+          <div class="mb-3">
+          <select class="form-select" aria-label="Default select example" name="id_ms">
+            <?php
+            foreach ($danh_sach_kich_co as $dskc) {
+              $id_kc = $dskc['id_kc'];
+              $kich_co = $dskc['kich_co'];
+              if ($id_kc == hien_thi_idkc_by_idsp($id_sp)) {
+                $selected = "selected";
+              } else {
+                $selected = "";
+              }
+            ?>
+            <option value="<?=$id_ms?>"<?php echo $selected ?>><?=$kich_co?></option>
+            <?php
+            }
+            ?>
+          </select>  
           </div>
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingInput" name="ghi_chu" placeholder="Ghi chú" value="<?=$mot_san_pham['ghi_chu']?>">
