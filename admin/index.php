@@ -34,7 +34,10 @@
           break;  
         case 'them_san_pham':
           require_once "controller/san_pham/them_san_pham.php";
-          break;  
+          break;
+        case 'kho_anh':
+          require_once "controller/san_pham/kho_anh.php";
+          break;
         case 'xoa_sp':
           require_once "controller/san_pham/xoa_san_pham.php";
           break;
