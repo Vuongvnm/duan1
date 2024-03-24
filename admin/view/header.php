@@ -10,9 +10,11 @@
   <link rel="stylesheet" href="../assets/css/admin_style.css">
   <script src="../assets/js/bootstrap.js"></script>
 </head>
-
+<?php
+  const URL = "/WD18302/duan1/admin/";
+?>
 <body>
-  <div class="container" id="blur">
+  <div class="container">
     <aside>
       <div class="top">
         <div class="logo">
@@ -26,19 +28,20 @@
         <a href="index.php">
           <span class="material-symbols-outlined">home</span>
           <h3>Trang chủ</h3>
+          <?php ; ?>
         </a>
-        <a href="index.php?action=danh_sach_danh_muc" class="active">
+        <a href="index.php?action=danh_sach_danh_muc" class="<?= $_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_danh_muc" ? "active" : ""?>">
           <span class="material-symbols-outlined">view_compact</span>
           <h3>Danh mục</h3>
         </a>
-        <a href="index.php?action=danh_sach_san_pham">
+        <a href="index.php?action=danh_sach_san_pham" class="<?= $_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_san_pham" ? "active" : ""?>">
           <span class="material-symbols-outlined">inventory</span>
           <h3>Sản phẩm</h3>
         </a>
-        <a href="index.php?action=danh_sach_mau_sac">
+        <a href="index.php?action=danh_sach_mau_sac" class="<?= $_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_mau_sac" ? "active" : ""?>">
           <span class="material-symbols-outlined">palette</span>
           <h3>Màu sắc</h3>
-          <a href="index.php?action=danh_sach_tin_tuc">
+          <a href="index.php?action=danh_sach_tin_tuc" class="<?= $_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_tin_tuc" ? "active" : ""?>">
             <span class="material-symbols-outlined">feed</span>
             <h3>Tin Tức</h3>
           </a>
