@@ -35,7 +35,7 @@
 
 <!-- Sản phẩm nổi bật -->
 <?php
-  require_once "view/thuoc_tinh/san_pham_noi_bat.php";
+  require_once "controller/thuoc_tinh/san_pham_noi_bat.php";
 ?>
 
 <!--banner-->

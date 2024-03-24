@@ -55,7 +55,7 @@
         <label for="floatingInput">Hình ảnh chính</label>
       </div>
       <div class="form-floating mb-3">
-        <input type="file" class="form-control" id="floatingInput" name="hinh_anh_phu" placeholder="Hình ảnh phụ" required>
+        <input type="file" class="form-control" id="floatingInput" name="hinh_anh_phu" placeholder="Hình ảnh phụ" required multiple>
         <label for="floatingInput">Hình ảnh phụ</label>
       </div>
       <div class="form-floating mb-3">

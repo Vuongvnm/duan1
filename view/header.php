@@ -11,14 +11,17 @@
   </head>
   <body>
     <!--header-->
+    <?php
+      const URL = "/WD18302/duan1/";
+    ?>
     <section id="header">
       <a href=""><img src="./assets/images/logo1.png" class="logo"></a>
       <ul id="navbar">
-        <li><a class="active" href="index.php">Trang chủ</a></li>
-        <li><a href="index.php?action=danh_sach_san_pham">Sản phẩm</a></li>
-        <li><a href="index.php?action=bai_viet">Bài viết</a></li>
-        <li><a href="index.php?action=gioi_thieu">Giới thiệu</a></li>
-        <li><a href="index.php?action=lien_he">Liên hệ</a></li>
+        <li><a class="<?= $_SERVER['REQUEST_URI'] == URL. "index.php" ? "active" : ""?>" href="index.php">Trang chủ</a></li>
+        <li><a class="<?= $_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_san_pham" ? "active" : ""?>" href="index.php?action=danh_sach_san_pham">Sản phẩm</a></li>
+        <li><a class="<?= $_SERVER['REQUEST_URI'] == URL. "index.php?action=bai_viet" ? "active" : ""?>" href="index.php?action=bai_viet">Bài viết</a></li>
+        <li><a class="<?= $_SERVER['REQUEST_URI'] == URL. "index.php?action=gioi_thieu" ? "active" : ""?>" href="index.php?action=gioi_thieu">Giới thiệu</a></li>
+        <li><a class="<?= $_SERVER['REQUEST_URI'] == URL. "index.php?action=lien_he" ? "active" : ""?>" href="index.php?action=lien_he">Liên hệ</a></li>
         <li id="lg-bar"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
         <li id="lg-bar"><a href=""><i class="fa-solid fa-user"></i></a></li>
         <a href="#" id="close"><i class="fa-solid fa-x"></i></a>

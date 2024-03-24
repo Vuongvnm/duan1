@@ -13,7 +13,7 @@
           <th>Giá sản phẩm</th>
           <th>Hình ảnh</th>
           <th>Số lượng</th>
-          <th colspan="3">Chức năng</th>
+          <th colspan="4">Chức năng</th>
           <th></th>
         </tr>
       </thead>
@@ -37,6 +37,7 @@
           <td class="warning"><a href="index.php?action=sua_sp&id_sp=<?=$dssp['id_sp']?>">Sửa</a></td>
           <td class="primary"><a href="index.php?action=xoa_sp&id_sp=<?=$dssp['id_sp']?>">Xóa</a></td>
           <td class="primary"><a href="index.php?action=chi_tiet_san_pham&id_sp=<?=$dssp['id_sp']?>">Chi tiết</a></td>
+          <td class="primary"><a href="index.php?action=kho_anh&id_sp=<?=$dssp['id_sp']?>">Kho ảnh</a></td>
         </tr>
         <?php
         }

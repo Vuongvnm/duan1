@@ -1,6 +1,6 @@
 <?php
     require_once "model/san_pham.php";
-    require_once "view/san_pham/them_san_pham.php";
+    require_once "view/san_pham/kho_anh.php";
     if(isset($_POST['them_moi'])) {
       $totalFiles = count($_FILES['hinh_anh_phu']['name']);
       $filesArray = array();
