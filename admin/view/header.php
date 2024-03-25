@@ -25,29 +25,32 @@
         </div>
       </div>
       <div class="sidebar">
-        <a href="index.php">
+        <a href="index.php" class="<?=$_SERVER['REQUEST_URI'] == URL. "index.php" ? "active" : ""?>">
           <span class="material-symbols-outlined">home</span>
           <h3>Trang chủ</h3>
-          <?php ; ?>
         </a>
-        <a href="index.php?action=danh_sach_danh_muc" class="<?= $_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_danh_muc" ? "active" : ""?>">
-          <span class="material-symbols-outlined">view_compact</span>
+        <a href="index.php?action=danh_sach_danh_muc" class="<?=$_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_danh_muc" ? "active" : ""?>">
+          <span class="material-symbols-outlined">list_alt</span>
           <h3>Danh mục</h3>
         </a>
-        <a href="index.php?action=danh_sach_san_pham" class="<?= $_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_san_pham" ? "active" : ""?>">
+        <a href="index.php?action=danh_sach_san_pham" class="<?=$_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_san_pham" ? "active" : ""?>">
           <span class="material-symbols-outlined">inventory</span>
           <h3>Sản phẩm</h3>
         </a>
-        <a href="index.php?action=danh_sach_mau_sac" class="<?= $_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_mau_sac" ? "active" : ""?>">
+        <a href="index.php?action=danh_sach_mau_sac" class="<?=$_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_mau_sac" ? "active" : ""?>">
           <span class="material-symbols-outlined">palette</span>
           <h3>Màu sắc</h3>
-          <a href="index.php?action=danh_sach_tin_tuc" class="<?= $_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_tin_tuc" ? "active" : ""?>">
-            <span class="material-symbols-outlined">feed</span>
-            <h3>Tin Tức</h3>
-          </a>
+        </a>  
+        <a href="index.php?action=danh_sach_tin_tuc" class="<?=$_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_tin_tuc" ? "active" : ""?>">
+          <span class="material-symbols-outlined">feed</span>
+          <h3>Tin Tức</h3>
         </a>
-        <a href="index.php?action=danh_sach_hoa_don">
-        <span class="material-symbols-outlined">receipt_long</span>
+        <a href="index.php?action=danh_sach_bai_viet" class="<?=$_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_bai_viet" ? "active" : ""?>">
+          <span class="material-symbols-outlined">article</span>
+          <h3>Bài viết</h3>
+        </a>
+        <a href="index.php?action=danh_sach_hoa_don" class="<?=$_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_hoa_don" ? "active" : ""?>">
+          <span class="material-symbols-outlined">receipt_long</span>
           <h3>Hóa đơn</h3>
         </a>
         <a href="index.php?action=danh_sach_voucher">
@@ -59,10 +62,6 @@
           <h3>Messages</h3>
           <span class="message-count">26</span>
         </a>
-        <a href="#">
-          <span class="material-symbols-outlined">inventory</span>
-          <h3>Products</h3>
-        </a>
         <a href="index.php?action=danh_sach_tin_tuc">
           <span class="material-symbols-outlined">feed</span>
           <h3>Tin Tức</h3>
@@ -70,10 +69,6 @@
         <a href="#">
           <span class="material-symbols-outlined">settings</span>
           <h3>Setting</h3>
-        </a>
-        <a href="#">
-          <span class="material-symbols-outlined">add</span>
-          <h3>Add Product</h3>
         </a>
         <a href="#">
           <span class="material-symbols-outlined">logout</span>

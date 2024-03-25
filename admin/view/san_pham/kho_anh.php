@@ -5,20 +5,26 @@
   <!-- End of insights -->
   <div class="recent-orders">
     <h2>Kho ảnh</h2>
-    <table class="table_danhmuc">
-      <tbody>
-        <div class="text-center">
-          <img src="../assets/images/products/f1.jpg" class="rounded" alt="...">
-          <img src="../assets/images/products/f1.jpg" class="rounded" alt="...">
-          <img src="../assets/images/products/f1.jpg" class="rounded" alt="...">
-          <img src="../assets/images/products/f1.jpg" class="rounded" alt="...">
-          <img src="../assets/images/products/f1.jpg" class="rounded" alt="...">
-          <img src="../assets/images/products/f1.jpg" class="rounded" alt="...">
-          <img src="../assets/images/products/f1.jpg" class="rounded" alt="...">
-        </div>
-    </table>
+    <div class="photo-gallery">
+    <?php
+      foreach($kho_anh as $ka) {
+        $hinh_anh = $ka['ten_ha'];
+        $hinh_path = "../assets/uploads/" . $hinh_anh;
+        if(is_file($hinh_path)) {
+          $hinh = "<img src='".$hinh_path."' height='80'>";
+        } else {
+          $hinh = "Không có hình ảnh!";
+        }
+      ?>
+      <div class="pic">
+        <img src="<?=$hinh_path?>">
+      </div>
+    <?php
+    }
+    ?>  
+    </div>
     <a href="#">Show All</a>
-    <a href="index.php?action=them_san_pham">Thêm mới</a>
+    <a href="index.php?action=them_kho_anh">Thêm mới</a>
   </div>
 </main>
 <!-- End of main -->
@@ -34,5 +40,4 @@
   <?php
   require_once "view/thuoc_tinh/sales_analytics.php";
   ?>
-</div>
 </div>

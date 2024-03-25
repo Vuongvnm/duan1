@@ -8,10 +8,9 @@
     <table class="table_danhmuc">
       <thead>
         <tr>
-          
           <th>Tên Voucher</th>
-          <th>Giá Giảm</th>
-          <th>Mã </th>
+          <th>Mã giảm</th>
+          <th>Số tiền giảm</th>
           <th colspan="3">Chức năng</th>
           <th></th>
         </tr>
@@ -19,6 +18,8 @@
       <tbody>
         <?php
           foreach($danh_sach_voucher as $dsvc) {
+            $ten_voucher = $dsvc['ten_voucher'];
+            // Đang hoàn thiện lại phần voucher
         ?>
         <tr>  
           <td><?=$dsvc['ten_voucher']?></td>

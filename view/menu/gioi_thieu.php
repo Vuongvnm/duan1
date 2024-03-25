@@ -46,5 +46,5 @@
   </div>
 </section>
 <?php
-  require_once "./view/dang_ky_thanh_vien/dang_ky_thanh_vien.php"
+  require_once "view/thuoc_tinh/thong_tin.php"
 ?>

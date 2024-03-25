@@ -1,5 +1,5 @@
 <?php
-require_once "../models/pdo.php";
+require_once "../model/pdo.php";
 function danh_sach_hoa_don() {
     $sql = "SELECT * FROM hoa_don ORDER BY id_hd DESC";
     return pdo_query($sql);
