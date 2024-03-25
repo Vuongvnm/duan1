@@ -35,9 +35,6 @@
         case 'them_san_pham':
           require_once "controller/san_pham/them_san_pham.php";
           break;
-        case 'kho_anh':
-          require_once "controller/san_pham/kho_anh.php";
-          break;
         case 'xoa_sp':
           require_once "controller/san_pham/xoa_san_pham.php";
           break;
@@ -46,6 +43,12 @@
           break; 
         case 'cap_nhat_san_pham':
           require_once "controller/san_pham/cap_nhat_san_pham.php";
+          break;
+        case 'kho_anh':
+          require_once "controller/san_pham/kho_anh.php";
+          break;  
+        case 'them_kho_anh':
+          require_once "controller/san_pham/them_kho_anh.php";
           break;
         /* END SẢN PHẨM */
 
@@ -69,15 +72,15 @@
           require_once "controller/mau_sac/cap_nhat_mau_sac.php";
         /* END MÀU SẮC */
 
-        /* START SẢN PHẨM */
+        /* START TIN TỨC */
         case 'danh_sach_tin_tuc':
           require_once "controller/tin_tuc/danh_sach_tin_tuc.php";
           break;
         case 'chi_tiet_tin_tuc':
           require_once "controller/tin_tuc/chi_tiet_tin_tuc.php";
           break;  
-        case 'them_bai_viet':
-          require_once "controller/tin_tuc/them_bai_viet.php";
+        case 'them_tin_tuc':
+          require_once "controller/tin_tuc/them_tin_tuc.php";
           break;  
         case 'xoa_tt':
           require_once "controller/tin_tuc/xoa_tin_tuc.php";
@@ -88,7 +91,28 @@
         case 'cap_nhat_tin_tuc':
           require_once "controller/tin_tuc/cap_nhat_tin_tuc.php";
           break;
-        /* END SẢN PHẨM */
+        /* END TIN TỨC */
+
+        /* START BÀI VIẾT */
+        case 'danh_sach_bai_viet':
+          require_once "controller/bai_viet/danh_sach_bai_viet.php";
+          break;
+        case 'chi_tiet_bai_viet':
+          require_once "controller/bai_viet/chi_tiet_bai_viet.php";
+          break;  
+        case 'them_bai_viet':
+          require_once "controller/bai_viet/them_bai_viet.php";
+          break;  
+        case 'xoa_bv':
+          require_once "controller/bai_viet/xoa_bai_viet.php";
+          break;
+        case 'sua_bv':
+          require_once "controller/bai_viet/sua_bai_viet.php";
+          break; 
+        case 'cap_nhat_bai_viet':
+          require_once "controller/bai_viet/cap_nhat_bai_viet.php";
+          break;
+        /* END BÀI VIẾT */
 
         /* START VOUCHER */
         case 'danh_sach_voucher':
@@ -111,7 +135,6 @@
           break;        
         /* END VOUCHER */
         
-
         /* START HÓA ĐƠN */
         case 'danh_sach_hoa_don':
           require_once "controller/hoa_don/danh_sach_hoa_don.php";

@@ -1,5 +1,5 @@
 <?php
-require_once "../models/pdo.php";
+require_once "../model/pdo.php";
   
 function danh_sach_voucher() {
   $sql = "SELECT * FROM voucher ORDER BY id_voucher DESC";

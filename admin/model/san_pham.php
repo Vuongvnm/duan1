@@ -1,5 +1,5 @@
 <?php
-  require_once "../models/pdo.php";
+  require_once "../model/pdo.php";
 
   function hien_thi_san_pham() {
     $sql = "SELECT * FROM san_pham ORDER BY id_sp DESC";
@@ -34,5 +34,10 @@
   function hien_thi_iddm_by_idsp($id_sp) {
     $sql = "SELECT * FROM san_pham WHERE id_sp = '$id_sp'";
     return pdo_query_one($sql)['id_dm'];
+  }
+
+  function kho_anh() {
+    $sql = "SELECT * FROM kho_anh ORDER BY id_ha DESC";
+    return pdo_query($sql);
   }
 ?>

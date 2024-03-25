@@ -51,12 +51,8 @@
         <label for="floatingInput">Xuất xứ</label>
       </div>
       <div class="form-floating mb-3">
-        <input type="file" class="form-control" id="floatingInput" name="hinh_anh" placeholder="Hình ảnh chính" required>
-        <label for="floatingInput">Hình ảnh chính</label>
-      </div>
-      <div class="form-floating mb-3">
-        <input type="file" class="form-control" id="floatingInput" name="hinh_anh_phu" placeholder="Hình ảnh phụ" required multiple>
-        <label for="floatingInput">Hình ảnh phụ</label>
+        <input type="file" class="form-control" id="floatingInput" name="hinh_anh" placeholder="Hình ảnh" required>
+        <label for="floatingInput">Hình ảnh</label>
       </div>
       <div class="form-floating mb-3">
         <input type="number" class="form-control" id="floatingInput" name="so_luong" placeholder="Số lượng" required>

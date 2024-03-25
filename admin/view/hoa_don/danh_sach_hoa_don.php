@@ -1,5 +1,4 @@
 <main>
-
   <?php
     require_once "view/thuoc_tinh/dashboard.php";
   ?>
@@ -9,7 +8,6 @@
     <table class="table_danhmuc">
       <thead>
         <tr>
-          
           <th>Mã Hóa Đơn</th>
           <th>PT Thanh Toán</th>
           <th>Tình Trạng</th>
