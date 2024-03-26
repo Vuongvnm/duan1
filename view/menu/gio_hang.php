@@ -17,7 +17,6 @@
     <tbody>
       <?php
       if (isset($_SESSION['gio_hang'])) {
-
         foreach ($_SESSION['gio_hang'] as $gh) {
           $ten_sp = $gh['ten_sp'];
           $hinh_anh = $gh['hinh_anh'];
