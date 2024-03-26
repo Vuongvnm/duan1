@@ -40,5 +40,5 @@
       }
     }
   }
-  require_once "view/footer.php";
+
 ?>
