@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <section id="page-header" style="background-image: url('./assets/images/about/banner.png')">
   <h2>GIỎ HÀNG</h2>
   <p>ĐẶT HÀNG NGAY ĐỂ NHẬN ƯU ĐÃI!</p>
@@ -76,3 +79,6 @@
       }
 ?>
 </section>
+<?php
+  require_once "view/footer.php";
+?>

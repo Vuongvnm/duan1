@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <!--hero-->
 <section id="page-header" style="background-image: url('./assets/images/banners/b19.jpg')">
   <h2>BÀI VIẾT</h2>
@@ -86,5 +89,6 @@
   <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
 </section>
 <?php
-  require_once "./view/dang_ky_thanh_vien/dang_ky_thanh_vien.php"
+  require_once "./view/dang_ky_thanh_vien/dang_ky_thanh_vien.php";
+  require_once "view/footer.php";
 ?>

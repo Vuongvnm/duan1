@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <div class="recent-updates">
     <h2>Recent Updates</h2>
     <div class="updates">

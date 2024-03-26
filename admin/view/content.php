@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <main>
   <?php
     require_once "thuoc_tinh/dashboard.php";
@@ -22,3 +25,6 @@
   ?>
 </div>
 </div>
+<?
+  require_once "view/footer.php"
+?>

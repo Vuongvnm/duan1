@@ -1,13 +1,16 @@
+<?php
+  require_once "view/header.php";
+?>
 <main>
   <?php
-    require_once "view/thuoc_tinh/dashboard.php";
+    require_once "view/thuoc_tinh/bang_dieu_khien.php";
   ?>
-  <!-- End of insights -->
   <div class="recent-orders">
     <?php
     if(is_array($danh_sach_tin_tuc)) {
+      $tieu_de = $danh_sach_tin_tuc['tieu_de'];
     ?>
-    <h2><?=$danh_sach_tin_tuc['tieu_de']?></h2>
+    <h2><?=$tieu_de?></h2>
     <?php
     }
     ?>
@@ -23,13 +26,15 @@
       <tbody>
         <?php
           foreach($danh_sach_bai_viet as $dsbv) {
+            $id_bv = $dsbv['id_bv'];
+            $ten_bai_viet = $dsbv['ten_bai_viet'];
         ?>
         <tr>  
-          <td><?=$dsbv['id_bv']?></td>
-          <td><?=$dsbv['ten_bai_viet']?></td>
-          <td class="warning"><a href="index.php?action=sua_bv&id_bv=<?=$dsbv['id_bv']?>">Sửa</a></td>
-          <td class="primary"><a href="index.php?action=xoa_bv&id_bv=<?=$dsbv['id_bv']?>">Xóa</a></td>
-          <td class="primary"><a href="index.php?action=chi_tiet_bai_viet&id_bv=<?=$dsbv['id_bv']?>">Chi tiết</a></td>
+          <td><?=$id_bv?></td>
+          <td><?=$ten_bai_viet?></td>
+          <td class="warning"><a href="index.php?action=sua_bv&id_bv=<?=$id_bv?>">Sửa</a></td>
+          <td class="primary"><a href="index.php?action=xoa_bv&id_bv=<?=$id_bv?>">Xóa</a></td>
+          <td class="primary"><a href="index.php?action=chi_tiet_bai_viet&id_bv=<?=$id_bv?>">Chi tiết</a></td>
         </tr>
         <?php
         }
@@ -44,14 +49,7 @@
 <div class="right">
   <?php
     require_once "view/thuoc_tinh/admin.php";
+    require_once "view/thuoc_tinh/cap_nhat_moi.php";
+    require_once "view/thuoc_tinh/so_lieu.php";
   ?>
-  <!-- End of top -->
-  <?php
-    require_once "view/thuoc_tinh/recent_updates.php";
-  ?>
-  <!-- End of recent updates -->
-  <?php
-    require_once "view/thuoc_tinh/sales_analytics.php";
-  ?>
-</div>
 </div>

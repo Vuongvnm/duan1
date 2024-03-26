@@ -1,8 +1,10 @@
+<?php
+  require_once "view/header.php";
+?>
 <main>
   <?php
-    require_once "view/thuoc_tinh/dashboard.php";
+    require_once "view/thuoc_tinh/bang_dieu_khien.php";
   ?>
-  <!-- End of insights -->
   <div class="recent-orders">
     <h2>Danh sách màu sắc</h2>
     <table class="table_danhmuc">
@@ -17,13 +19,15 @@
       <tbody>
         <?php
           foreach($danh_sach_mau_sac as $dsms) {
+            $id_ms = $dsms['id_ms'];
+            $ten_ms = $dsms['ten_ms'];
         ?>
         <tr>  
-          <td><?=$dsms['id_ms']?></td>
-          <td><?=$dsms['ten_ms']?></td>
-          <td class="warning"><a href="index.php?action=sua_ms&id_ms=<?=$dsms['id_ms']?>">Sửa</a></td>
-          <td class="primary"><a href="index.php?action=xoa_ms&id_ms=<?=$dsms['id_ms']?>" onclick="return confirm('Bạn có muốn xóa không?')">Xóa</a></td>
-          <td class="primary"><a href="index.php?action=chi_tiet_mau_sac&id_ms=<?=$dsms['id_ms']?>">Chi tiết</a></td>
+          <td><?=$id_ms?></td>
+          <td><?=$ten_ms?></td>
+          <td class="warning"><a href="index.php?action=sua_ms&id_ms=<?=$id_ms?>">Sửa</a></td>
+          <td class="primary"><a href="index.php?action=xoa_ms&id_ms=<?=$id_ms?>" onclick="return confirm('Bạn có muốn xóa không?')">Xóa</a></td>
+          <td class="primary"><a href="index.php?action=chi_tiet_mau_sac&id_ms=<?=$id_ms?>">Chi tiết</a></td>
         </tr>
         <?php
         }
@@ -38,14 +42,10 @@
 <div class="right">
   <?php
     require_once "view/thuoc_tinh/admin.php";
-  ?>
-  <!-- End of top -->
-  <?php
-    require_once "view/thuoc_tinh/recent_updates.php";
-  ?>
-  <!-- End of recent updates -->
-  <?php
-    require_once "view/thuoc_tinh/sales_analytics.php";
+    require_once "view/thuoc_tinh/cap_nhat_moi.php";
+    require_once "view/thuoc_tinh/so_lieu.php";
   ?>
 </div>
-</div>
+<?
+  require_once "view/footer.php"
+?>
