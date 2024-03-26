@@ -16,8 +16,9 @@
           $hinh = "Không có hình ảnh!";
         }
       ?>
-      <div class="pic">
+      <div class="pic pb-1">
         <img src="<?=$hinh_path?>">
+        <a class="btn btn-warning" href="">Xóa</a>
       </div>
     <?php
     }
