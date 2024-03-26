@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <div class="mb">
   <div class="box_title">TÀI KHOẢN</div>
   <div class="box_content form_account">
@@ -50,3 +53,6 @@
     </div>
   </div>
 </form>
+<?php
+  require_once "view/footer.php";
+?>

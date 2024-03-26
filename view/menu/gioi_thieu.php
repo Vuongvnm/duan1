@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <!--hero-->
 <section id="page-header" style="background-image: url('./assets/images/about/banner.png');">
   <h2>GIỚI THIỆU</h2>
@@ -47,4 +50,7 @@
 </section>
 <?php
   require_once "view/thuoc_tinh/thong_tin.php"
+?>
+<?php
+  require_once "view/footer.php";
 ?>

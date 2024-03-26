@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <main>
   <?php
   if (is_array($mot_voucher)) {
@@ -38,18 +41,13 @@
     </div>
   </section>
 </main>
-<!-- End of main -->
 <div class="right">
   <?php
-  require_once "view/thuoc_tinh/admin.php";
-  ?>
-  <!-- End of top -->
-  <?php
-  require_once "view/thuoc_tinh/recent_updates.php";
-  ?>
-  <!-- End of recent updates -->
-  <?php
-  require_once "view/thuoc_tinh/sales_analytics.php";
+    require_once "view/thuoc_tinh/admin.php";
+    require_once "view/thuoc_tinh/cap_nhat_moi.php";
+    require_once "view/thuoc_tinh/so_lieu.php";
   ?>
 </div>
-</div>
+<?php
+  require_once "view/footer.php";
+?>

@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <section id="prodetails" class="section-p1">
   <?php
     if(is_array($san_pham_chi_tiet)) {
@@ -87,3 +90,6 @@
 </body>
 
 </html>
+<?php
+  require_once "view/footer.php";
+?>

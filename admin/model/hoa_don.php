@@ -4,7 +4,7 @@ function danh_sach_hoa_don() {
     $sql = "SELECT * FROM hoa_don ORDER BY id_hd DESC";
     return pdo_query($sql);
   }
-function tinhtrang($id_hd) {
+function tinh_trang($id_hd) {
   $sql = "SELECT * FROM hoa_don WHERE id_hd = $id_hd";
   return pdo_query_one($sql);
 }

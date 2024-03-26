@@ -1,6 +1,8 @@
+<?php
+  require_once "view/header.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +12,6 @@
   <script src="./assets/js/bootstrap.js"></script>
   <script src="https://kit.fontawesome.com/47e370afdb.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
   <!--header-->
   <?php

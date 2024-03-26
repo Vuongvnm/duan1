@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <main>
   <?php
   if (is_array($mot_bai_viet)) {
@@ -47,29 +50,14 @@
       </div>
     </div>
   </section>
-  <script>
-    function img(anything) {
-      document.querySelector('.slide').src = anything;
-    }
-
-    function change(change) {
-      const line = document.querySelector('.home');
-      line.style.background = change;
-    }
-  </script>
 </main>
-<!-- End of main -->
 <div class="right">
   <?php
-  require_once "view/thuoc_tinh/admin.php";
-  ?>
-  <!-- End of top -->
-  <?php
-  require_once "view/thuoc_tinh/recent_updates.php";
-  ?>
-  <!-- End of recent updates -->
-  <?php
-  require_once "view/thuoc_tinh/sales_analytics.php";
+    require_once "view/thuoc_tinh/admin.php";
+    require_once "view/thuoc_tinh/cap_nhat_moi.php";
+    require_once "view/thuoc_tinh/so_lieu.php";
   ?>
 </div>
-</div>
+<?
+  require_once "view/footer.php"
+?>

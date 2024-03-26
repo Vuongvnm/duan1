@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
   <!--hero-->
   <section id="page-header" style="background-image: url('./assets/images/about/banner.png')">
     <h2>LIÊN HỆ</h2>
@@ -58,3 +61,6 @@
   <?php
   require_once "./view/dang_ky_thanh_vien/dang_ky_thanh_vien.php"
   ?>
+  <?php
+  require_once "view/footer.php";
+?>

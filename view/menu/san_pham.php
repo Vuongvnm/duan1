@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <!--hero-->
 <section id="page-header">
   <h2>Sản phẩm</h2>
@@ -49,4 +52,7 @@
 <!--newsletter-->
 <?php
   require_once "view/thuoc_tinh/thong_tin.php";
+?>
+<?php
+  require_once "view/footer.php";
 ?>

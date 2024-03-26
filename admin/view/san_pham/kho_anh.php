@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <main>
   <?php
   require_once "view/thuoc_tinh/dashboard.php";
@@ -42,3 +45,6 @@
   require_once "view/thuoc_tinh/sales_analytics.php";
   ?>
 </div>
+<?
+  require_once "view/footer.php"
+?>
