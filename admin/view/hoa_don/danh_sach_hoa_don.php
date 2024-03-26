@@ -26,17 +26,21 @@
           <td><?=$dshd['id_hd']?></td>
           <td><?php
               if ($dshd['hinh_thuc_thanh_toan'] == 1) {
-                echo "Chuyển khoản";
+                echo "Thanh toán khi nhận hàng";
               } elseif ($dshd['hinh_thuc_thanh_toan'] == 2) {
+                echo "Chuyển khoản ngân hàng";
+              } elseif ($dshd['hinh_thuc_thanh_toan'] == 3) {
+                echo "Zalo Pay";
+              } elseif ($dshd['hinh_thuc_thanh_toan'] == 4) {
                 echo "Tiền mặt";
-              }
+              } 
           ?>
           </td>
           <td><?php
               if ($dshd['tinh_trang_thanh_toan'] == 1) {
-                echo "Chưa thanh toán";
+                echo "Đang xử lý";
               } elseif ($dshd['tinh_trang_thanh_toan'] == 2) {
-                echo "Đã thanh toán";
+                echo "Thanh toán thành công";
               }
           ?>
           </td>
