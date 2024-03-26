@@ -583,11 +583,12 @@ main .recent-orders a {
 }
 
 .pic {
-  position: relative;
+  /* position: relative; */
   height: 120px;
   border-radius: 10px;
   box-shadow: 2px 2px 5px lightgray;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 .pic img {

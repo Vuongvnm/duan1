@@ -128,8 +128,7 @@ INSERT INTO `danh_muc` (`id_dm`, `ten_dm`) VALUES
 (37, 'Gucci3'),
 (38, 'Bruno Marss'),
 (39, 'Tesla'),
-(40, 'Daisy Dukes'),
-(41, 'Rùa1');
+(40, 'Daisy Dukes');
 
 -- --------------------------------------------------------
 
@@ -406,7 +405,7 @@ CREATE TABLE IF NOT EXISTS `voucher` (
   `ma_giam_gia` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `dieu_kien` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   PRIMARY KEY (`id_voucher`)
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `voucher`
@@ -425,7 +424,8 @@ INSERT INTO `voucher` (`id_voucher`, `ten_voucher`, `ngay_bat_dau`, `ngay_ket_th
 (10, 'Giảm mùa hè', '2024-03-25 11:58:15', '2024-03-30 18:58:15', '50%', 'Giảm 50% với các loại hàng', 'AZ1234', 'Khách VIP'),
 (11, 'Giảm mùa hè', '2024-03-25 11:58:15', '2024-03-30 18:58:15', '50%', 'Giảm 50% với các loại hàng', 'AZ1234', 'Khách VIP'),
 (12, 'Giảm mùa hè', '2024-03-25 11:58:15', '2024-03-30 18:58:15', '50%', 'Giảm 50% với các loại hàng', 'AZ1234', 'Khách VIP'),
-(13, 'Giảm mùa hè', '2024-03-25 11:58:15', '2024-03-30 18:58:15', '50%', 'Giảm 50% với các loại hàng', 'AZ1234', 'Khách VIP');
+(13, 'Giảm mùa hè', '2024-03-25 11:58:15', '2024-03-30 18:58:15', '50%', 'Giảm 50% với các loại hàng', 'AZ1234', 'Khách VIP'),
+(15, 'Giảm mùa xuân, hè', '2024-03-26 00:00:00', '2024-04-03 00:00:00', '12000', 'Giảm đợt 1', 'LO94343', 'Giảm cho nữ giới');
 
 --
 -- Các ràng buộc cho các bảng đã đổ

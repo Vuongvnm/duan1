@@ -15,7 +15,7 @@ if (isset($_POST['them_moi'])) {
     move_uploaded_file($tmpName, '../assets/uploads/' . $newImageName);
     $filesArray[] = $newImageName;
   }
-  $filesArray = json_encode($filesArray);
+  // $filesArray = json_encode($filesArray);
   $query = "INSERT INTO kho_anh VALUES ('', '$name', '$filesArray')";
   mysqli_query($conn, $query);
 }
