@@ -19,11 +19,11 @@
         <label for="floatingInput">ngày kết thúc</label>
       </div>
       <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="floatingInput" name="giam_gia" placeholder="Giảm giá" required>
-        <label for="floatingInput">Giảm giá</label>
+        <input type="text" class="form-control" id="floatingInput" name="so_tien_giam" placeholder="Số tiền giảm" required>
+        <label for="floatingInput">Số tiền giảm</label>
       </div>
       <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="floatingInput" name="ghi_chu" placeholder="Ghi chú" required>
+        <input type="text" class="form-control" id="floatingInput" name="ghi_chu" placeholder="Ghi chú">
         <label for="floatingInput">Ghi chú</label>
       </div>
       <div class="form-floating mb-3">
@@ -34,14 +34,9 @@
         <input type="text" class="form-control" id="floatingInput" name="dieu_kien" placeholder="Điều kiện" required>
         <label for="floatingInput">Điều kiện</label>
       </div>
-      <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="floatingInput" name="giam_toi_da" placeholder="Giảm tối đa" required>
-        <label for="floatingInput">Giảm tối đa</label>
-      </div>
       <div class="form-floating">
         <button type="submit" class="btn btn-primary" name="them_moi">Thêm mới</button>
         <button type="reset" class="btn btn-secondary">Nhập lại</button>
-        <a href = "index.php?action=danh_sach_voucher" >Danh sách</a>
       </div>
     </form>
   </div>
