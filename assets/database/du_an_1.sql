@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Mar 25, 2024 at 12:59 PM
--- Server version: 8.2.0
--- PHP Version: 8.2.13
+-- Máy chủ: 127.0.0.1:3306
+-- Thời gian đã tạo: Th3 26, 2024 lúc 04:04 AM
+-- Phiên bản máy phục vụ: 8.2.0
+-- Phiên bản PHP: 8.2.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `du_an_1`
+-- Cơ sở dữ liệu: `du_an_1`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bai_viet`
+-- Cấu trúc bảng cho bảng `bai_viet`
 --
 
 DROP TABLE IF EXISTS `bai_viet`;
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `bai_viet` (
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `bai_viet`
+-- Đang đổ dữ liệu cho bảng `bai_viet`
 --
 
 INSERT INTO `bai_viet` (`id_bv`, `ten_bai_viet`, `tom_tat`, `noi_dung`, `hinh_anh`, `id_tt`) VALUES
@@ -55,7 +55,7 @@ INSERT INTO `bai_viet` (`id_bv`, `ten_bai_viet`, `tom_tat`, `noi_dung`, `hinh_an
 -- --------------------------------------------------------
 
 --
--- Table structure for table `binh_luan`
+-- Cấu trúc bảng cho bảng `binh_luan`
 --
 
 DROP TABLE IF EXISTS `binh_luan`;
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `binh_luan` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `chi_tiet_hoa_don`
+-- Cấu trúc bảng cho bảng `chi_tiet_hoa_don`
 --
 
 DROP TABLE IF EXISTS `chi_tiet_hoa_don`;
@@ -88,7 +88,7 @@ CREATE TABLE IF NOT EXISTS `chi_tiet_hoa_don` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `chi_tiet_tai_khoan`
+-- Cấu trúc bảng cho bảng `chi_tiet_tai_khoan`
 --
 
 DROP TABLE IF EXISTS `chi_tiet_tai_khoan`;
@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS `chi_tiet_tai_khoan` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `danh_muc`
+-- Cấu trúc bảng cho bảng `danh_muc`
 --
 
 DROP TABLE IF EXISTS `danh_muc`;
@@ -117,7 +117,7 @@ CREATE TABLE IF NOT EXISTS `danh_muc` (
 ) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Dumping data for table `danh_muc`
+-- Đang đổ dữ liệu cho bảng `danh_muc`
 --
 
 INSERT INTO `danh_muc` (`id_dm`, `ten_dm`) VALUES
@@ -134,7 +134,30 @@ INSERT INTO `danh_muc` (`id_dm`, `ten_dm`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `gioi_thieu`
+-- Cấu trúc bảng cho bảng `danh_muc_tt`
+--
+
+DROP TABLE IF EXISTS `danh_muc_tt`;
+CREATE TABLE IF NOT EXISTS `danh_muc_tt` (
+  `id_tt_danh_muc` int NOT NULL AUTO_INCREMENT,
+  `ten_danh_muc` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_tt_danh_muc`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `danh_muc_tt`
+--
+
+INSERT INTO `danh_muc_tt` (`id_tt_danh_muc`, `ten_danh_muc`) VALUES
+(1, 'quần'),
+(2, 'áo'),
+(3, 'quần'),
+(4, 'áo khoác');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `gioi_thieu`
 --
 
 DROP TABLE IF EXISTS `gioi_thieu`;
@@ -148,30 +171,7 @@ CREATE TABLE IF NOT EXISTS `gioi_thieu` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hinh_thuc_thanh_toan`
---
-
-DROP TABLE IF EXISTS `hinh_thuc_thanh_toan`;
-CREATE TABLE IF NOT EXISTS `hinh_thuc_thanh_toan` (
-  `id_httt` int NOT NULL AUTO_INCREMENT,
-  `hinh_thuc` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  PRIMARY KEY (`id_httt`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-
---
--- Dumping data for table `hinh_thuc_thanh_toan`
---
-
-INSERT INTO `hinh_thuc_thanh_toan` (`id_httt`, `hinh_thuc`) VALUES
-(1, 'Thanh toán khi nhận hàng'),
-(2, 'Chuyển khoản ngân hàng'),
-(3, 'Zalo Pay'),
-(4, 'Momo Pay');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `hoa_don`
+-- Cấu trúc bảng cho bảng `hoa_don`
 --
 
 DROP TABLE IF EXISTS `hoa_don`;
@@ -180,30 +180,35 @@ CREATE TABLE IF NOT EXISTS `hoa_don` (
   `tong_tien` double(10,2) NOT NULL,
   `id_tk` int NOT NULL,
   `id_voucher` int NOT NULL,
-  `id_httt` int NOT NULL,
-  `id_tttt` int NOT NULL,
-  PRIMARY KEY (`id_hd`),
-  KEY `id_hoadon_hinhthucthanhtoan` (`id_httt`),
-  KEY `id_hoadon_tinhtrangthanhtoan` (`id_tttt`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+  `hinh_thuc_thanh_toan` int NOT NULL,
+  `tinh_trang_thanh_toan` int NOT NULL,
+  PRIMARY KEY (`id_hd`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `hoa_don`
+--
+
+INSERT INTO `hoa_don` (`id_hd`, `tong_tien`, `id_tk`, `id_voucher`, `hinh_thuc_thanh_toan`, `tinh_trang_thanh_toan`) VALUES
+(1, 123151.00, 6, 1, 4, 2);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kho_anh`
+-- Cấu trúc bảng cho bảng `kho_anh`
 --
 
 DROP TABLE IF EXISTS `kho_anh`;
 CREATE TABLE IF NOT EXISTS `kho_anh` (
   `id_ha` int NOT NULL AUTO_INCREMENT,
-  `ten_ha` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `ten_ha` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `id_sp` int NOT NULL,
   PRIMARY KEY (`id_ha`),
   KEY `fk_sanpham_hinhanh` (`id_sp`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Dumping data for table `kho_anh`
+-- Đang đổ dữ liệu cho bảng `kho_anh`
 --
 
 INSERT INTO `kho_anh` (`id_ha`, `ten_ha`, `id_sp`) VALUES
@@ -227,7 +232,7 @@ INSERT INTO `kho_anh` (`id_ha`, `ten_ha`, `id_sp`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kich_co`
+-- Cấu trúc bảng cho bảng `kich_co`
 --
 
 DROP TABLE IF EXISTS `kich_co`;
@@ -238,7 +243,7 @@ CREATE TABLE IF NOT EXISTS `kich_co` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Dumping data for table `kich_co`
+-- Đang đổ dữ liệu cho bảng `kich_co`
 --
 
 INSERT INTO `kich_co` (`id_kc`, `kich_co`) VALUES
@@ -251,7 +256,7 @@ INSERT INTO `kich_co` (`id_kc`, `kich_co`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `lien_he`
+-- Cấu trúc bảng cho bảng `lien_he`
 --
 
 DROP TABLE IF EXISTS `lien_he`;
@@ -267,7 +272,7 @@ CREATE TABLE IF NOT EXISTS `lien_he` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mau_sac`
+-- Cấu trúc bảng cho bảng `mau_sac`
 --
 
 DROP TABLE IF EXISTS `mau_sac`;
@@ -278,7 +283,7 @@ CREATE TABLE IF NOT EXISTS `mau_sac` (
 ) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Dumping data for table `mau_sac`
+-- Đang đổ dữ liệu cho bảng `mau_sac`
 --
 
 INSERT INTO `mau_sac` (`id_ms`, `ten_ms`) VALUES
@@ -295,14 +300,14 @@ INSERT INTO `mau_sac` (`id_ms`, `ten_ms`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `san_pham`
+-- Cấu trúc bảng cho bảng `san_pham`
 --
 
 DROP TABLE IF EXISTS `san_pham`;
 CREATE TABLE IF NOT EXISTS `san_pham` (
   `id_sp` int NOT NULL AUTO_INCREMENT,
   `ten_sp` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `hang` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `hang` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `gia_sp` double(10,2) NOT NULL,
   `xuat_xu` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `hinh_anh` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
@@ -321,7 +326,7 @@ CREATE TABLE IF NOT EXISTS `san_pham` (
 ) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Dumping data for table `san_pham`
+-- Đang đổ dữ liệu cho bảng `san_pham`
 --
 
 INSERT INTO `san_pham` (`id_sp`, `ten_sp`, `hang`, `gia_sp`, `xuat_xu`, `hinh_anh`, `so_luong`, `luot_xem`, `ghi_chu`, `ngay_tao`, `ngay_cap_nhat`, `id_dm`, `id_ms`, `id_kc`) VALUES
@@ -347,7 +352,7 @@ INSERT INTO `san_pham` (`id_sp`, `ten_sp`, `hang`, `gia_sp`, `xuat_xu`, `hinh_an
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tai_khoan`
+-- Cấu trúc bảng cho bảng `tai_khoan`
 --
 
 DROP TABLE IF EXISTS `tai_khoan`;
@@ -363,28 +368,7 @@ CREATE TABLE IF NOT EXISTS `tai_khoan` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tinh_trang_thanh_toan`
---
-
-DROP TABLE IF EXISTS `tinh_trang_thanh_toan`;
-CREATE TABLE IF NOT EXISTS `tinh_trang_thanh_toan` (
-  `id_tttt` int NOT NULL AUTO_INCREMENT,
-  `tinh_trang` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  PRIMARY KEY (`id_tttt`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-
---
--- Dumping data for table `tinh_trang_thanh_toan`
---
-
-INSERT INTO `tinh_trang_thanh_toan` (`id_tttt`, `tinh_trang`) VALUES
-(1, 'Đang xử lý'),
-(2, 'Thanh toán thành công');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tin_tuc`
+-- Cấu trúc bảng cho bảng `tin_tuc`
 --
 
 DROP TABLE IF EXISTS `tin_tuc`;
@@ -395,7 +379,7 @@ CREATE TABLE IF NOT EXISTS `tin_tuc` (
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `tin_tuc`
+-- Đang đổ dữ liệu cho bảng `tin_tuc`
 --
 
 INSERT INTO `tin_tuc` (`id_tt`, `tieu_de`) VALUES
@@ -408,7 +392,7 @@ INSERT INTO `tin_tuc` (`id_tt`, `tieu_de`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `voucher`
+-- Cấu trúc bảng cho bảng `voucher`
 --
 
 DROP TABLE IF EXISTS `voucher`;
@@ -419,13 +403,13 @@ CREATE TABLE IF NOT EXISTS `voucher` (
   `ngay_ket_thuc` datetime NOT NULL,
   `so_tien_giam` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `ghi_chu` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci,
-  `ma_giam_gia` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `ma_giam_gia` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `dieu_kien` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   PRIMARY KEY (`id_voucher`)
 ) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Dumping data for table `voucher`
+-- Đang đổ dữ liệu cho bảng `voucher`
 --
 
 INSERT INTO `voucher` (`id_voucher`, `ten_voucher`, `ngay_bat_dau`, `ngay_ket_thuc`, `so_tien_giam`, `ghi_chu`, `ma_giam_gia`, `dieu_kien`) VALUES
@@ -444,30 +428,23 @@ INSERT INTO `voucher` (`id_voucher`, `ten_voucher`, `ngay_bat_dau`, `ngay_ket_th
 (13, 'Giảm mùa hè', '2024-03-25 11:58:15', '2024-03-30 18:58:15', '50%', 'Giảm 50% với các loại hàng', 'AZ1234', 'Khách VIP');
 
 --
--- Constraints for dumped tables
+-- Các ràng buộc cho các bảng đã đổ
 --
 
 --
--- Constraints for table `bai_viet`
+-- Các ràng buộc cho bảng `bai_viet`
 --
 ALTER TABLE `bai_viet`
   ADD CONSTRAINT `id_baiviet_tintuc` FOREIGN KEY (`id_tt`) REFERENCES `tin_tuc` (`id_tt`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Constraints for table `hoa_don`
---
-ALTER TABLE `hoa_don`
-  ADD CONSTRAINT `id_hoadon_hinhthucthanhtoan` FOREIGN KEY (`id_httt`) REFERENCES `hinh_thuc_thanh_toan` (`id_httt`) ON DELETE RESTRICT ON UPDATE RESTRICT,
-  ADD CONSTRAINT `id_hoadon_tinhtrangthanhtoan` FOREIGN KEY (`id_tttt`) REFERENCES `tinh_trang_thanh_toan` (`id_tttt`) ON DELETE RESTRICT ON UPDATE RESTRICT;
-
---
--- Constraints for table `kho_anh`
+-- Các ràng buộc cho bảng `kho_anh`
 --
 ALTER TABLE `kho_anh`
   ADD CONSTRAINT `fk_sanpham_hinhanh` FOREIGN KEY (`id_sp`) REFERENCES `san_pham` (`id_sp`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Constraints for table `san_pham`
+-- Các ràng buộc cho bảng `san_pham`
 --
 ALTER TABLE `san_pham`
   ADD CONSTRAINT `fk_sanpham_danhmuc` FOREIGN KEY (`id_dm`) REFERENCES `danh_muc` (`id_dm`) ON DELETE RESTRICT ON UPDATE RESTRICT,
