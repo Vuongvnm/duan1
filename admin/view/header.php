@@ -37,6 +37,10 @@
           <span class="material-symbols-outlined">inventory</span>
           <h3>Sản phẩm</h3>
         </a>
+        <a href="index.php?action=danh_sach_binh_luan" class="<?=$_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_binh_luan" ? "active" : ""?>">
+        <span class="material-symbols-outlined">comment</span>
+          <h3>Bình luận</h3>
+        </a>
         <a href="index.php?action=danh_sach_mau_sac" class="<?=$_SERVER['REQUEST_URI'] == URL. "index.php?action=danh_sach_mau_sac" ? "active" : ""?>">
           <span class="material-symbols-outlined">palette</span>
           <h3>Màu sắc</h3>

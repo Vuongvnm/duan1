@@ -149,6 +149,18 @@
           require_once "controller/hoa_don/cap_nhat_hoa_don.php";   
           break;
         /* END HÓA ĐƠN */
+
+        /* START BÌNH LUẬN */
+        case 'danh_sach_binh_luan':
+          require_once "controller/binh_luan/danh_sach_binh_luan.php";
+          break;
+        case 'xoa_binh_luan':
+          require_once "controller/binh_luan/xoa_binh_luan.php";
+          break; 
+        case 'an_binh_luan':
+          require_once "controller/binh_luan/an_binh_luan.php";   
+          break;
+        /* END BÌNH LUẬN */
         default:
           require_once "view/content.php";
           break;  
