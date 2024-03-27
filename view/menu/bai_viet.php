@@ -205,84 +205,82 @@
     <span class="home-subtitle">Your source of great content</span>
   </div>
 </section>
-
-<section class="post container">
-
-  <div class="post-box">
-    <img src="./assets/Blog Website Images/img/post-1.jpg" class="post-img">
-    <h2 class="category">Mobile</h2>
-    <a href="./assets/html/post-page.html" class="post-title">
-      How to create a perfect blog page isnala dasdwqd
-    </a>
-    <span class="post-date">12/02/2012</span>
-    <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolore.</p>
-    
-    <div class="profile">
-      <img src="./assets/Blog Website Images/img/profile-1.jpg" alt="">
-      <span class="profile-name">ABCSSAD</span>
+<section id="blog">
+  <div class="blog-box">
+    <div class="blog-img">
+      <img src="./assets//images/blog/b1.jpg" />
     </div>
-  </div>
-
-  <div class="post-box">
-    <img src="./assets/Blog Website Images/img/post-1.jpg" class="post-img">
-    <h2 class="category">Mobile</h2>
-    <a href="./assets/html/post-page.html" class="post-title">
-      How to create 
-    </a>
-    <span class="post-date">12/02/2012</span>
-    <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolore.</p>
-    
-    <dic class="profile">
-      <img src="./assets/Blog Website Images/img/profile-1.jpg" alt="">
-      <span class="profile-name">ABCSSAD</span>
-    </dic>
-  </div>
-
-  <div class="post-box">
-    <img src="./assets/Blog Website Images/img/post-1.jpg" class="post-img">
-    <h2 class="category">Mobile</h2>
-    <a href="./assets/html/post-page.html" class="post-title">
-      How to create dasdwqewqewe
-    </a>
-    <span class="post-date">12/02/2012</span>
-    <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolore.</p>
-    
-    <div class="profile">
-      <img src="./assets/Blog Website Images/img/profile-1.jpg" alt="">
-      <span class="profile-name">ABCSSAD</span>
+    <div class="blog-details">
+      <h4>The Cotton Jersey Zip-Up Hoodie</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quae
+        voluptates magnam numquam, quis, quia illum eveniet laudantium,
+        veniam totam expedita...
+      </p>
+      <a href="#">CONTINUE READING</a>
     </div>
+    <h1>14/01</h1>
   </div>
-
-  <div class="post-box">
-    <img src="./assets/Blog Website Images/img/post-1.jpg" class="post-img">
-    <h2 class="category">Mobile</h2>
-    <a href="./assets/html/post-page.html" class="post-title">
-      How to create 
-    </a>
-    <span class="post-date">12/02/2012</span>
-    <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolore.</p>
-    
-    <div class="profile">
-      <img src="./assets/Blog Website Images/img/profile-1.jpg" alt="">
-      <span class="profile-name">ABCSSAD</span>
+  <div class="blog-box">
+    <div class="blog-img">
+      <img src="./assets/images/blog/b2.jpg" />
     </div>
-  </div>
-
-  <div class="post-box">
-    <img src="./assets/Blog Website Images/img/post-1.jpg" class="post-img">
-    <h2 class="category">Mobile</h2>
-    <a href="./assets/html/post-page.html" class="post-title">
-      How to create 
-    </a>
-    <span class="post-date">12/02/2012</span>
-    <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolore.</p>
-    
-    <div class="profile">
-      <img src="./assets/Blog Website Images/img/profile-1.jpg" alt="">
-      <span class="profile-name">ABCSSAD</span>
+    <div class="blog-details">
+      <h4>The Cotton Jersey Zip-Up Hoodie</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quae
+        voluptates magnam numquam, quis, quia illum eveniet laudantium,
+        veniam totam expedita...
+      </p>
+      <a href="#">CONTINUE READING</a>
     </div>
+    <h1>13/01</h1>
   </div>
-
+  <div class="blog-box">
+    <div class="blog-img">
+      <img src="./assets/images/blog/b3.jpg" />
+    </div>
+    <div class="blog-details">
+      <h4>The Cotton Jersey Zip-Up Hoodie</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quae
+        voluptates magnam numquam, quis, quia illum eveniet laudantium,
+        veniam totam expedita...
+      </p>
+      <a href="#">CONTINUE READING</a>
+    </div>
+    <h1>12/01</h1>
+  </div>
+  <div class="blog-box">
+    <div class="blog-img">
+      <img src="./assets/images/blog/b4.jpg" />
+    </div>
+    <div class="blog-details">
+      <h4>The Cotton Jersey Zip-Up Hoodie</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quae
+        voluptates magnam numquam, quis, quia illum eveniet laudantium,
+        veniam totam expedita...
+      </p>
+      <a href="#">CONTINUE READING</a>
+    </div>
+    <h1>11/01</h1>
+  </div>
+  <div class="blog-box">
+    <div class="blog-img">
+      <img src="./assets/images/blog/b5.jpg" />
+    </div>
+    <div class="blog-details">
+      <h4>The Cotton Jersey Zip-Up Hoodie</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quae
+        voluptates magnam numquam, quis, quia illum eveniet laudantium,
+        veniam totam expedita...
+      </p>
+      <a href="#">CONTINUE READING</a>
+    </div>
+    <h1>10/01</h1>
+  </div>
 </section>
 
 
@@ -298,5 +296,6 @@
   <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
 </section> -->
 <?php
-  // require_once "view/footer.php";
-?> 
+  require_once "./view/dang_ky_thanh_vien/dang_ky_thanh_vien.php";
+  require_once "view/footer.php";
+?>

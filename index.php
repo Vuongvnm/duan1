@@ -33,6 +33,11 @@
           require_once "controller/menu/dang_nhap.php";
           break;
         /* END OTHERS */
+          /* START OTHERS */
+          case 'bai_viet_chi_tiet':
+            require_once "controller/thuoc_tinh/bai_viet_chi_tiet.php";
+            break;
+          /* END OTHERS */
         default:
           require_once "view/content.php";
           break;  
