@@ -65,6 +65,7 @@
         <input type="hidden" name="id_bv" value="<?=$id_bv?>">
         <button type="submit" class="btn btn-primary" name="cap_nhat">Cập nhật</button>
         <button type="reset" class="btn btn-secondary">Nhập lại</button>
+        <a href="index.php?action=danh_sach_bai_viet"><button type="submit" class="btn btn-success" name="them_moi">Danh sách bài viết</button></a>
       </div>
     </form>
   </div>

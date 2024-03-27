@@ -10,6 +10,7 @@
     <table class="table_danhmuc">
       <thead>
         <tr>
+          <th>Số thứ tự</th>
           <th>Mã sản phẩm</th>
           <th>Tên sản phẩm</th>
           <th>Giá sản phẩm</th>
@@ -21,7 +22,7 @@
       </thead>
       <tbody>
         <?php
-          foreach($danh_sach_san_pham as $dssp) {
+          foreach($danh_sach_san_pham as $stt => $dssp) {
             $id_sp = $dssp['id_sp'];
             $ten_sp = $dssp['ten_sp'];
             $gia_sp = $dssp['gia_sp'];
@@ -33,8 +34,10 @@
             } else {
               $hinh = "Không có hình ảnh!";
             }
+            $stt += 1;
         ?>
         <tr>  
+          <td><?=$stt?></td>
           <td><?=$id_sp?></td>
           <td><?=$ten_sp?></td>
           <td><?=$gia_sp?></td>
@@ -50,8 +53,11 @@
         ?>
       </tbody>
     </table>
-    <a href="#">Show All</a> 
-    <a href="index.php?action=them_san_pham">Thêm mới</a>
+    <br>
+    <div class="form-floating">
+      <a href="index.php?action=them_san_pham"><button type="submit" class="btn btn-primary" name="them_moi">Thêm mới</button></a>
+      <button class="btn btn-secondary">Hiển thị thêm</button>
+    </div>
   </div>
 </main>
 <div class="right">

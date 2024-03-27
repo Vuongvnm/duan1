@@ -3,28 +3,19 @@
 ?>
 <main>
   <?php
-    require_once "thuoc_tinh/dashboard.php";
+    require_once "thuoc_tinh/bang_dieu_khien.php";
   ?>
-  <!-- End of insights -->
   <div class="recent-orders">
     <h2>Control Panel</h2>
   </div>
 </main>
-<!-- End of main -->
 <div class="right">
   <?php
     require_once "thuoc_tinh/admin.php";
+    require_once "thuoc_tinh/cap_nhat_moi.php";
+    require_once "thuoc_tinh/so_lieu.php";
   ?>
-  <!-- End of top -->
-  <?php
-    require_once "thuoc_tinh/recent_updates.php";
-  ?>
-  <!-- End of recent updates -->
-  <?php
-    require_once "thuoc_tinh/sales_analytics.php";
-  ?>
-</div>
 </div>
 <?
-  require_once "view/footer.php"
+  require_once "view/footer.php";
 ?>

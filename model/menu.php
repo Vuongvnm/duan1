@@ -10,4 +10,9 @@
     return pdo_query_one($sql);
   }
 
+  function danh_sach_bai_viet() {
+    $sql = "SELECT * FROM bai_viet ORDER BY id_bv DESC";
+    return pdo_query($sql);
+  }
+
 ?>

@@ -7,10 +7,14 @@
   ?>
   <div class="recent-orders">
     <h2>Thêm Voucher</h2>
-    <form action="index.php?action=them_voucher" method="post">
+    <form action="index.php?action=them_voucher" method="post" enctype="multipart/form-data">
       <div class="form-floating mb-3">
         <input type="text" class="form-control" id="floatingInput" name="ten_voucher" placeholder="Tên Voucher" required>
         <label for="floatingInput">Tên Voucher</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="file" class="form-control" id="floatingInput" name="hinh_anh" placeholder="Hình ảnh" required>
+        <label for="floatingInput">Hình ảnh</label>
       </div>
       <div class="form-floating mb-3">
         <input type="date" class="form-control" id="floatingInput" name="ngay_bat_dau" placeholder="Ngày bắt đầu" required>
@@ -39,6 +43,7 @@
       <div class="form-floating">
         <button type="submit" class="btn btn-primary" name="them_moi">Thêm mới</button>
         <button type="reset" class="btn btn-secondary">Nhập lại</button>
+        <a href="index.php?action=danh_sach_voucher"><button type="submit" class="btn btn-success" name="them_moi">Danh sách voucher</button></a>
       </div>
     </form>
   </div>

@@ -10,6 +10,7 @@
     <table class="table_danhmuc">
       <thead>
         <tr>
+          <th>Số thứ tự</th>
           <th>Mã bài viết</th>
           <th>Tên bài viết</th>
           <th>Hình ảnh</th>
@@ -19,7 +20,7 @@
       </thead>
       <tbody>
         <?php
-          foreach($danh_sach_bai_viet as $dsbv) {
+          foreach($danh_sach_bai_viet as $stt => $dsbv) {
             $id_bv = $dsbv['id_bv'];
             $ten_bai_viet = $dsbv['ten_bai_viet'];
             $hinh_anh = $dsbv['hinh_anh'];
@@ -29,8 +30,10 @@
             } else {
               $hinh = "Không có hình ảnh!";
             }
+            $stt += 1;
         ?>
         <tr>  
+          <td><?=$stt?></td>
           <td><?=$id_bv?></td>
           <td><?=$ten_bai_viet?></td>
           <td><img src="<?=$hinh_path?>" width="50" height="50"></td>
@@ -43,8 +46,11 @@
         ?>
       </tbody>
     </table>
-    <a href="#">Show All</a> 
-    <a href="index.php?action=them_bai_viet">Thêm mới</a>
+    <br>
+    <div class="form-floating">
+      <a href="index.php?action=them_bai_viet"><button type="submit" class="btn btn-primary" name="them_moi">Thêm mới</button></a>
+      <button class="btn btn-secondary">Hiển thị thêm</button>
+    </div>
   </div>
 </main>
 <!-- End of main -->

@@ -185,6 +185,71 @@
     object-position: center;
     border: 2px solid var(--second-color);
   }
+
+  .post-header {
+    width: 100%;
+    height: 500px;
+    background: var(--container-color);
+  }
+
+  .post-container {
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem !important;
+  }
+
+  .back-home {
+    color: var(--second-color);
+    font-size: 0.9rem;
+  }
+
+  .header-title {
+    width: 90%;
+    font-size: 2.6rem;
+    color: var(--bg-color);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .header-img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .post-content {
+    margin-top: 5rem !important;
+  }
+
+  .sub-heading {
+    font-size: 1.2rem;
+  }
+
+  .post-text {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 1rem 0;
+    text-align: justify;
+  }
+
+  .share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  .share-title {
+    font-size: 1.1rem;
+  }
 </style>
 <!-- hero
 <section id="page-header" style="background-image: url('./assets/images/banners/b19.jpg')">
@@ -199,91 +264,32 @@
   </div>
 </header>
 
-<section class="home" id="home">
-  <div class="home-text container">
-    <h2 class="home-title">The Venom Blog</h2>
-    <span class="home-subtitle">Your source of great content</span>
+<section class="post-header">
+  <div class="header-content post-container">
+    <a href="" class="back-home">Back to home</a>
+    <h1 class="header-title">How to create something</h1>
+    <img src="../Blog Website Images/img/post-1.jpg" class="header-img" alt="">
   </div>
 </section>
 
-<section class="post container">
-
-  <div class="post-box">
-    <img src="./assets/Blog Website Images/img/post-1.jpg" class="post-img">
-    <h2 class="category">Mobile</h2>
-    <a href="./assets/html/post-page.html" class="post-title">
-      How to create a perfect blog page isnala dasdwqd
-    </a>
-    <span class="post-date">12/02/2012</span>
-    <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolore.</p>
-    
-    <div class="profile">
-      <img src="./assets/Blog Website Images/img/profile-1.jpg" alt="">
-      <span class="profile-name">ABCSSAD</span>
-    </div>
-  </div>
-
-  <div class="post-box">
-    <img src="./assets/Blog Website Images/img/post-1.jpg" class="post-img">
-    <h2 class="category">Mobile</h2>
-    <a href="./assets/html/post-page.html" class="post-title">
-      How to create 
-    </a>
-    <span class="post-date">12/02/2012</span>
-    <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolore.</p>
-    
-    <dic class="profile">
-      <img src="./assets/Blog Website Images/img/profile-1.jpg" alt="">
-      <span class="profile-name">ABCSSAD</span>
-    </dic>
-  </div>
-
-  <div class="post-box">
-    <img src="./assets/Blog Website Images/img/post-1.jpg" class="post-img">
-    <h2 class="category">Mobile</h2>
-    <a href="./assets/html/post-page.html" class="post-title">
-      How to create dasdwqewqewe
-    </a>
-    <span class="post-date">12/02/2012</span>
-    <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolore.</p>
-    
-    <div class="profile">
-      <img src="./assets/Blog Website Images/img/profile-1.jpg" alt="">
-      <span class="profile-name">ABCSSAD</span>
-    </div>
-  </div>
-
-  <div class="post-box">
-    <img src="./assets/Blog Website Images/img/post-1.jpg" class="post-img">
-    <h2 class="category">Mobile</h2>
-    <a href="./assets/html/post-page.html" class="post-title">
-      How to create 
-    </a>
-    <span class="post-date">12/02/2012</span>
-    <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolore.</p>
-    
-    <div class="profile">
-      <img src="./assets/Blog Website Images/img/profile-1.jpg" alt="">
-      <span class="profile-name">ABCSSAD</span>
-    </div>
-  </div>
-
-  <div class="post-box">
-    <img src="./assets/Blog Website Images/img/post-1.jpg" class="post-img">
-    <h2 class="category">Mobile</h2>
-    <a href="./assets/html/post-page.html" class="post-title">
-      How to create 
-    </a>
-    <span class="post-date">12/02/2012</span>
-    <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolore.</p>
-    
-    <div class="profile">
-      <img src="./assets/Blog Website Images/img/profile-1.jpg" alt="">
-      <span class="profile-name">ABCSSAD</span>
-    </div>
-  </div>
-
+<section class="post-content post-container">
+  <h2 class="sub-heading">Creat Something</h2>
+  <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus animi rerum repellendus nihil dolorum dignissimos quia dolores temporibus eius nisi?</p>
+  <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus animi rerum repellendus nihil dolorum dignissimos quia dolores temporibus eius nisi?</p>
+  <h2 class="sub-heading">Creat Something</h2>
+  <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus animi rerum repellendus nihil dolorum dignissimos quia dolores temporibus eius nisi?</p>
+  <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus animi rerum repellendus nihil dolorum dignissimos quia dolores temporibus eius nisi?</p>
 </section>
+
+<div class="share post-container">
+  <span class="share-title">Share this article</span>
+  <div class="social">
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+  </div>
+</div>
 
 
 

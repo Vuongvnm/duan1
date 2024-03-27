@@ -18,11 +18,13 @@
       </thead>
       <tbody>
         <?php
-          foreach($danh_sach_mau_sac as $dsms) {
+          foreach($danh_sach_mau_sac as $stt => $dsms) {
             $id_ms = $dsms['id_ms'];
             $ten_ms = $dsms['ten_ms'];
+            $stt += 1;
         ?>
         <tr>  
+          <td><?=$stt?></td>
           <td><?=$id_ms?></td>
           <td><?=$ten_ms?></td>
           <td class="warning"><a href="index.php?action=sua_ms&id_ms=<?=$id_ms?>">Sửa</a></td>
@@ -34,8 +36,11 @@
         ?>
       </tbody>
     </table>
-    <a href="#">Show All</a> 
-    <a href="index.php?action=them_mau_sac">Thêm mới</a>
+    <br>
+    <div class="form-floating">
+      <a href="index.php?action=them_mau_sac"><button type="submit" class="btn btn-primary" name="them_moi">Thêm mới</button></a>
+      <button class="btn btn-secondary">Hiển thị thêm</button>
+    </div>
   </div>
 </main>
 <!-- End of main -->

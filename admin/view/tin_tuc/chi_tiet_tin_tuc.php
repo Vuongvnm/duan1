@@ -41,8 +41,12 @@
         ?>
       </tbody>
     </table>
-    <a href="#">Show All</a> 
-    <a href="index.php?action=them_bai_viet">Thêm mới</a>
+    <br>
+    <div class="form-floating">
+      <a href="index.php?action=them_bai_viet"><button type="submit" class="btn btn-primary" name="them_moi">Thêm mới</button></a>
+      <button class="btn btn-secondary">Hiển thị thêm</button>
+      <a href="index.php?action=danh_sach_tin_tuc"><button type="submit" class="btn btn-success" name="them_moi">Danh sách tin tức</button></a>
+    </div>
   </div>
 </main>
 <!-- End of main -->

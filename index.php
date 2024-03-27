@@ -10,7 +10,7 @@
           require_once "controller/menu/san_pham.php";
           break;
         case 'bai_viet':
-          require_once "view/menu/bai_viet.php";
+          require_once "controller/menu/bai_viet.php";
           break;
         case 'gioi_thieu':
           require_once "view/menu/gioi_thieu.php";

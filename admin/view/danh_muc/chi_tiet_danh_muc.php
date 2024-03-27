@@ -41,8 +41,11 @@ require_once "view/header.php";
         ?>
       </tbody>
     </table>
-    <a href="#">Show All</a>
-    <a href="index.php?action=them_san_pham">Thêm mới</a>
+    <br>
+    <div class="form-floating">
+      <a href="index.php?action=them_san_pham"><button type="submit" class="btn btn-primary" name="them_moi">Thêm mới</button></a>
+      <button class="btn btn-secondary">Hiển thị thêm</button>
+    </div>
   </div>
 </main>
 <div class="right">

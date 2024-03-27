@@ -6,8 +6,8 @@ function danh_sach_voucher() {
   return pdo_query($sql);
 }
 
-function them_voucher($ten_voucher, $ngay_bat_dau, $ngay_ket_thuc, $so_tien_giam, $ghi_chu, $ma_giam_gia, $dieu_kien) {
-    $sql = "INSERT INTO voucher (ten_voucher, ngay_bat_dau, ngay_ket_thuc, so_tien_giam, ghi_chu, ma_giam_gia, dieu_kien) VALUES ('$ten_voucher', '$ngay_bat_dau', '$ngay_ket_thuc', '$so_tien_giam', '$ghi_chu', '$ma_giam_gia', '$dieu_kien')";
+function them_voucher($ten_voucher, $hinh_anh, $ngay_bat_dau, $ngay_ket_thuc, $so_tien_giam, $ghi_chu, $ma_giam_gia, $dieu_kien) {
+    $sql = "INSERT INTO voucher (ten_voucher, hinh_anh, ngay_bat_dau, ngay_ket_thuc, so_tien_giam, ghi_chu, ma_giam_gia, dieu_kien) VALUES ('$ten_voucher', '$ngay_bat_dau', '$hinh_anh', '$ngay_ket_thuc', '$so_tien_giam', '$ghi_chu', '$ma_giam_gia', '$dieu_kien')";
     pdo_execute($sql);
 }
 

@@ -24,6 +24,7 @@
         <input type="hidden" name="id_ms" value="<?=$id_ms?>">
         <button type="submit" class="btn btn-primary" name="cap_nhat">Cập nhật</button>
         <button type="reset" class="btn btn-secondary">Nhập lại</button>
+        <a href="index.php?action=danh_sach_mau_sac"><button type="submit" class="btn btn-success" name="them_moi">Danh sách màu sắc</button></a>
       </div>
     </form>
   </div>
