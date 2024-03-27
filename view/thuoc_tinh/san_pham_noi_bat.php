@@ -1,6 +1,3 @@
-<?php
-  require_once "view/header.php";
-?>
 <section id="product1" class="section-p1">
   <h2>Sản phẩm nổi bật</h2>
   <p>Bộ sưu tập mua hè</p>
@@ -40,6 +37,3 @@
     ?>
   </div>
 </section>
-<?php
-  require_once "view/footer.php";
-?>

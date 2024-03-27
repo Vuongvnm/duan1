@@ -33,19 +33,39 @@ body {
   transition: 1s ease-in-out;
 }
 
-.wrapper.active .form-wrapper.sign-in {
+ .wrapper.active .form-wrapper.sign-in {
   transform: scale(0) translate(-300px, 500px);
-}
-
-.wrapper .form-wrapper.sign-up {
-  position: absolute;
-  top: 0;
-  transform: scale(0)  translate(200px, -500px);
 }
 
 .wrapper.active .form-wrapper.sign-up {
   transform: scale(1) translate(0, 0);
 }
+
+.wrapper.active .form-wrapper.forget-pass {
+  transform: scale(0) translate(0, 0);
+}
+
+.wrapper .form-wrapper.sign-up {
+  position: absolute;
+  top: 0;
+  transform: scale(0) translate(200px, -500px);
+}
+
+.wrapper .form-wrapper.forget-pass {
+  position: absolute;
+  top: 0;
+  transform: scale(0) translate(200px, -500px);
+}
+
+.wrapper .form-wrapper.forget-pass {
+  position: absolute;
+  top: 0;
+  transform: scale(0);
+}
+/*
+.wrapper.active .form-wrapper.sign-up {
+  transform: scale(1) translate(0, 0);
+} */
 
 h2 {
   font-size: 30px;

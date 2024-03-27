@@ -1,6 +1,3 @@
-<?php
-  require_once "view/header.php";
-?>
 <section id="sm-banner" class="section-p1">
   <div class="banner-box">
     <h4>Crazy deals</h4>
@@ -30,6 +27,3 @@
     <h3>New Trendy Prints</h3>
   </div>
 </section>
-<?php
-  require_once "view/footer.php";
-?>
