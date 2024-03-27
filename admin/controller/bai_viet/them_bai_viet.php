@@ -15,7 +15,8 @@
     move_uploaded_file($_FILES["hinh_anh"]["tmp_name"], $target_file);
     them_bai_viet($ten_bai_viet, $tom_tat, $noi_dung, $ten_hinh_anh, $id_tt);
     echo "<script type='text/javascript'>alert('Thêm thành công!');</script>";
+    
   }
   error_reporting(E_ERROR | E_PARSE);
-  header('Location: index.php?action=them_bai_viet');
+  header('Location: index.php?action=danh_sach_bai_viet');
 ?>

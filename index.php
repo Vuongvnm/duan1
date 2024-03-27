@@ -10,7 +10,7 @@
           require_once "controller/menu/san_pham.php";
           break;
         case 'bai_viet':
-          require_once "view/menu/bai_viet.php";
+          require_once "controller/menu/bai_viet.php";
           break;
         case 'gioi_thieu':
           require_once "view/menu/gioi_thieu.php";
@@ -30,6 +30,11 @@
           require_once "controller/menu/them_gio_hang.php";          
           break;
         /* END OTHERS */
+          /* START OTHERS */
+          case 'bai_viet_chi_tiet':
+            require_once "controller/thuoc_tinh/bai_viet_chi_tiet.php";
+            break;
+          /* END OTHERS */
         default:
           require_once "view/content.php";
           break;  

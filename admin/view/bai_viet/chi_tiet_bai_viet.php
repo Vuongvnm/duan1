@@ -17,15 +17,9 @@
     <div class="container flex">
       <div class="left">
         <div class="main_image">
-          <img src="../assets/images/products/f1.jpg" class="slide">
+          <img src="../assets/images/blog/b1.jpg" class="slide">
         </div>
-        <div class="option flex">
-          <img src="../assets/images/products/f2.jpg" onclick="img('../assets/images/products/f2.jpg')">
-          <img src="../assets/images/products/f3.jpg" onclick="img('../assets/images/products/f3.jpg')">
-          <img src="../assets/images/products/f4.jpg" onclick="img('../assets/images/products/f4.jpg')">
-          <img src="../assets/images/products/f5.jpg" onclick="img('../assets/images/products/f5.jpg')">
-          <img src="../assets/images/products/f6.jpg" onclick="img('../assets/images/products/f6.jpg')">
-        </div>
+       
       </div>
       <div class="right">
         <h3>Tên bài viết: <?=$ten_bai_viet?></h3>

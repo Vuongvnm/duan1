@@ -4,87 +4,35 @@
   <p>Read all case studies about our products!</p>
 </section>
 <section id="blog">
-  <div class="blog-box">
-    <div class="blog-img">
-      <img src="./assets//images/blog/b1.jpg" />
+  <?php foreach($danh_sach_bai_viet as $bai_viet) {
+            $id_bv = $bai_viet['id_bv'];
+            $hinh_anh = $bai_viet['hinh_anh'];
+        $hinh_path = "./assets/uploads/" . $hinh_anh;
+        if(is_file($hinh_path)) {
+          $hinh = "<img src='".$hinh_path."' height='80'>";
+        } else {
+          $hinh = "Không có hình ảnh!";
+        }
+            ?>
+    <div class="blog-box">
+      <div class="blog-img">
+        <img src="<?=$hinh_path?>"<?php echo $bai_viet['hinh_anh']; ?>" />
+      </div>
+      <div class="blog-details">
+        <h4><?php echo $bai_viet['ten_bai_viet']; ?></h4>
+        <p><?php echo $bai_viet['tom_tat']; ?></p>
+        <a href="index.php?action=bai_viet_chi_tiet&id_bv=<?=$id_bv?>">CONTINUE READING</a>
+      </div>
+      <h1><?php echo date('d/m', strtotime($bai_viet['ngay_tao'])); ?></h1>
     </div>
-    <div class="blog-details">
-      <h4>The Cotton Jersey Zip-Up Hoodie</h4>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quae
-        voluptates magnam numquam, quis, quia illum eveniet laudantium,
-        veniam totam expedita...
-      </p>
-      <a href="#">CONTINUE READING</a>
-    </div>
-    <h1>14/01</h1>
-  </div>
-  <div class="blog-box">
-    <div class="blog-img">
-      <img src="./assets/images/blog/b2.jpg" />
-    </div>
-    <div class="blog-details">
-      <h4>The Cotton Jersey Zip-Up Hoodie</h4>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quae
-        voluptates magnam numquam, quis, quia illum eveniet laudantium,
-        veniam totam expedita...
-      </p>
-      <a href="#">CONTINUE READING</a>
-    </div>
-    <h1>13/01</h1>
-  </div>
-  <div class="blog-box">
-    <div class="blog-img">
-      <img src="./assets/images/blog/b3.jpg" />
-    </div>
-    <div class="blog-details">
-      <h4>The Cotton Jersey Zip-Up Hoodie</h4>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quae
-        voluptates magnam numquam, quis, quia illum eveniet laudantium,
-        veniam totam expedita...
-      </p>
-      <a href="#">CONTINUE READING</a>
-    </div>
-    <h1>12/01</h1>
-  </div>
-  <div class="blog-box">
-    <div class="blog-img">
-      <img src="./assets/images/blog/b4.jpg" />
-    </div>
-    <div class="blog-details">
-      <h4>The Cotton Jersey Zip-Up Hoodie</h4>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quae
-        voluptates magnam numquam, quis, quia illum eveniet laudantium,
-        veniam totam expedita...
-      </p>
-      <a href="#">CONTINUE READING</a>
-    </div>
-    <h1>11/01</h1>
-  </div>
-  <div class="blog-box">
-    <div class="blog-img">
-      <img src="./assets/images/blog/b5.jpg" />
-    </div>
-    <div class="blog-details">
-      <h4>The Cotton Jersey Zip-Up Hoodie</h4>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quae
-        voluptates magnam numquam, quis, quia illum eveniet laudantium,
-        veniam totam expedita...
-      </p>
-      <a href="#">CONTINUE READING</a>
-    </div>
-    <h1>10/01</h1>
-  </div>
+  <?php } ?>
 </section>
+
 <section id="pagination" class="section-p1">
   <a href="#">1</a>
   <a href="#">2</a>
   <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
 </section>
 <?php
-  require_once "./view/dang_ky_thanh_vien/dang_ky_thanh_vien.php"
+  require_once "view/thuoc_tinh/thong_tin.php";
 ?>
