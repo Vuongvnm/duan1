@@ -21,7 +21,14 @@
         case 'gio_hang':
           require_once "controller/menu/gio_hang.php";
           break;  
+        case 'dang_ky':
+          require_once "controller/menu/dang_ky.php";
+          break;
+        case 'dang_nhap':
+          require_once "controller/menu/dang_nhap.php";
+          break;  
         /* END MENU */
+        
         /* START OTHERS */
         case 'san_pham_chi_tiet':
           require_once "controller/thuoc_tinh/san_pham_chi_tiet.php";
@@ -29,15 +36,8 @@
         case 'them_gio_hang':
           require_once "controller/menu/them_gio_hang.php";          
           break;
-        case 'dang_nhap':
-          require_once "controller/menu/dang_nhap.php";
-          break;
         /* END OTHERS */
-          /* START OTHERS */
-          case 'bai_viet_chi_tiet':
-            require_once "controller/thuoc_tinh/bai_viet_chi_tiet.php";
-            break;
-          /* END OTHERS */
+
         default:
           require_once "view/content.php";
           break;  
