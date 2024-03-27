@@ -15,6 +15,7 @@
       <div class="form-floating">
         <button type="submit" class="btn btn-primary" name="them_moi">Thêm mới</button>
         <button type="reset" class="btn btn-secondary">Nhập lại</button>
+        <a href="index.php?action=danh_sach_tin_tuc"><button type="submit" class="btn btn-success" name="them_moi">Danh sách tin tức</button></a>
       </div>
     </form>
   </div>

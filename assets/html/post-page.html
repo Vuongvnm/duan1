@@ -185,6 +185,71 @@
     object-position: center;
     border: 2px solid var(--second-color);
   }
+
+  .post-header {
+    width: 100%;
+    height: 500px;
+    background: var(--container-color);
+  }
+
+  .post-container {
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem !important;
+  }
+
+  .back-home {
+    color: var(--second-color);
+    font-size: 0.9rem;
+  }
+
+  .header-title {
+    width: 90%;
+    font-size: 2.6rem;
+    color: var(--bg-color);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .header-img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .post-content {
+    margin-top: 5rem !important;
+  }
+
+  .sub-heading {
+    font-size: 1.2rem;
+  }
+
+  .post-text {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 1rem 0;
+    text-align: justify;
+  }
+
+  .share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  .share-title {
+    font-size: 1.1rem;
+  }
 </style>
 <!-- hero
 <section id="page-header" style="background-image: url('./assets/images/banners/b19.jpg')">
@@ -199,89 +264,32 @@
   </div>
 </header>
 
-<section class="home" id="home">
-  <div class="home-text container">
-    <h2 class="home-title">The Venom Blog</h2>
-    <span class="home-subtitle">Your source of great content</span>
+<section class="post-header">
+  <div class="header-content post-container">
+    <a href="" class="back-home">Back to home</a>
+    <h1 class="header-title">How to create something</h1>
+    <img src="../Blog Website Images/img/post-1.jpg" class="header-img" alt="">
   </div>
 </section>
-<section id="blog">
-  <div class="blog-box">
-    <div class="blog-img">
-      <img src="./assets//images/blog/b1.jpg" />
-    </div>
-    <div class="blog-details">
-      <h4>The Cotton Jersey Zip-Up Hoodie</h4>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quae
-        voluptates magnam numquam, quis, quia illum eveniet laudantium,
-        veniam totam expedita...
-      </p>
-      <a href="#">CONTINUE READING</a>
-    </div>
-    <h1>14/01</h1>
-  </div>
-  <div class="blog-box">
-    <div class="blog-img">
-      <img src="./assets/images/blog/b2.jpg" />
-    </div>
-    <div class="blog-details">
-      <h4>The Cotton Jersey Zip-Up Hoodie</h4>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quae
-        voluptates magnam numquam, quis, quia illum eveniet laudantium,
-        veniam totam expedita...
-      </p>
-      <a href="#">CONTINUE READING</a>
-    </div>
-    <h1>13/01</h1>
-  </div>
-  <div class="blog-box">
-    <div class="blog-img">
-      <img src="./assets/images/blog/b3.jpg" />
-    </div>
-    <div class="blog-details">
-      <h4>The Cotton Jersey Zip-Up Hoodie</h4>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quae
-        voluptates magnam numquam, quis, quia illum eveniet laudantium,
-        veniam totam expedita...
-      </p>
-      <a href="#">CONTINUE READING</a>
-    </div>
-    <h1>12/01</h1>
-  </div>
-  <div class="blog-box">
-    <div class="blog-img">
-      <img src="./assets/images/blog/b4.jpg" />
-    </div>
-    <div class="blog-details">
-      <h4>The Cotton Jersey Zip-Up Hoodie</h4>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quae
-        voluptates magnam numquam, quis, quia illum eveniet laudantium,
-        veniam totam expedita...
-      </p>
-      <a href="#">CONTINUE READING</a>
-    </div>
-    <h1>11/01</h1>
-  </div>
-  <div class="blog-box">
-    <div class="blog-img">
-      <img src="./assets/images/blog/b5.jpg" />
-    </div>
-    <div class="blog-details">
-      <h4>The Cotton Jersey Zip-Up Hoodie</h4>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quae
-        voluptates magnam numquam, quis, quia illum eveniet laudantium,
-        veniam totam expedita...
-      </p>
-      <a href="#">CONTINUE READING</a>
-    </div>
-    <h1>10/01</h1>
-  </div>
+
+<section class="post-content post-container">
+  <h2 class="sub-heading">Creat Something</h2>
+  <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus animi rerum repellendus nihil dolorum dignissimos quia dolores temporibus eius nisi?</p>
+  <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus animi rerum repellendus nihil dolorum dignissimos quia dolores temporibus eius nisi?</p>
+  <h2 class="sub-heading">Creat Something</h2>
+  <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus animi rerum repellendus nihil dolorum dignissimos quia dolores temporibus eius nisi?</p>
+  <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus animi rerum repellendus nihil dolorum dignissimos quia dolores temporibus eius nisi?</p>
 </section>
+
+<div class="share post-container">
+  <span class="share-title">Share this article</span>
+  <div class="social">
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+  </div>
+</div>
 
 
 
@@ -296,6 +304,5 @@
   <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
 </section> -->
 <?php
-  require_once "./view/dang_ky_thanh_vien/dang_ky_thanh_vien.php";
-  require_once "view/footer.php";
-?>
+  // require_once "view/footer.php";
+?> 

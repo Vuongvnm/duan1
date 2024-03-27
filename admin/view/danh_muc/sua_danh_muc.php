@@ -24,6 +24,7 @@
         <input type="hidden" name="id_dm" value="<?=$id_dm?>">
         <button type="submit" class="btn btn-primary" name="cap_nhat">Cập nhật</button>
         <button type="reset" class="btn btn-secondary">Nhập lại</button>
+        <a href="index.php?action=danh_sach_danh_muc"><button type="submit" class="btn btn-success" name="them_moi">Danh sách danh mục</button></a>
       </div>
     </form>
   </div>

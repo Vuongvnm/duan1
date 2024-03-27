@@ -10,6 +10,7 @@
     <table class="table_danhmuc">
       <thead>
         <tr class="col">
+          <th>Số thứ tự</th>
           <th>Mã tin tức</th>
           <th>Tiêu đề</th>
           <th colspan="3">Chức năng</th>
@@ -17,13 +18,15 @@
       </thead>
       <tbody>
         <?php
-        foreach ($danh_sach_tin_tuc as $dstt) {
+        foreach ($danh_sach_tin_tuc as $stt => $dstt) {
           $id_tt = $dstt['id_tt'];
           $tieu_de = $dstt['tieu_de'];
+          $stt += 1;
         ?>
           <tr>
+            <td><?=$stt?></td>
             <td><?=$id_tt?></td>
-            <td><?= $tieu_de?></td>
+            <td><?=$tieu_de?></td>
             <td class="warning"><a href="index.php?action=sua_tt&id_tt=<?=$id_tt?>">Sửa</a></td>
             <td class="primary"><a href="index.php?action=xoa_tt&id_tt=<?=$id_tt?>" onclick="return confirm('Bạn có muốn xóa không?')">Xóa</a></td>
             <td class="primary"><a href="index.php?action=chi_tiet_tin_tuc&id_tt=<?=$id_tt?>">Chi tiết</a></td>
@@ -33,8 +36,11 @@
         ?>
       </tbody>
     </table>
-    <a href="#">Show All</a>
-    <a href="index.php?action=them_tin_tuc">Thêm mới</a>
+    <br>
+    <div class="form-floating">
+      <a href="index.php?action=them_tin_tuc"><button type="submit" class="btn btn-primary" name="them_moi">Thêm mới</button></a>
+      <button class="btn btn-secondary">Hiển thị thêm</button>
+    </div>
   </div>
 </main>
 <div class="right">

@@ -418,10 +418,12 @@ main table tbody tr:last-child td {
 }
 
 main .recent-orders a {
-  text-align: center;
-  display: block;
-  margin: 1rem auto;
   color: var(--color-primary);
+}
+
+main .recent-orders a:hover {
+  color: var(--color-warning);
+  text-decoration: underline;
 }
 
 /* ==================== RIGHT ==================== */
