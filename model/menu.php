@@ -26,4 +26,30 @@
     return pdo_query_one($sql);
   }
 
+  function kiem_tra_gio_hang($id_tknd, $id_sp) {
+    $sql = "SELECT * FROM gio_hang WHERE id_tknd = $id_tknd AND id_sp = $id_sp";
+    $result = pdo_query($sql);
+    if (count($result) == 0) {
+        return false;
+    }
+    return true;
+  }
+
+  function so_luong_id_sp($id_tknd, $id_sp) {
+    $sql = "SELECT * FROM gio_hang where id_tknd = $id_tknd AND id_sp = $id_sp";
+    return pdo_query_one($sql)['so_luong'];
+  }
+
+  function them_gio_hang($so_luong, $id_tknd, $id_sp) {
+    if (kiem_tra_gio_hang($id_tknd, $id_sp) == false) {
+        $sql = "INSERT INTO gio_hang (so_luong, id_tknd, id_sp) VALUES ('$so_luong', '$id_tknd', '$id_sp')";
+    } else {
+        $so_luong = so_luong_id_sp($id_tknd, $id_sp) + 1;
+        $sql = "UPDATE gio_hang SET so_luong = '$so_luong' WHERE id_tknd = '$id_tknd' AND id_sp = '$id_sp'";
+    }
+    pdo_execute($sql);
+}
+
+
+
 ?>

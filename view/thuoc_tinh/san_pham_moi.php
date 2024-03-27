@@ -1,6 +1,3 @@
-<?php
-  require_once "view/header.php";
-?>
 <section id="product1" class="section-p1">
   <h2>Sản phẩm mới</h2>
   <p>Bộ sưu tập mới nhất</p>
@@ -33,13 +30,10 @@
         </div>
         <h4><?=$gia_sp?> VNĐ</h4>
       </div>
-      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+      <a href="index.php?action=them_gio_hang&id_sp=<?=$id_sp?>"><i class="fa-solid fa-cart-shopping cart"></i></a>
     </div>
     <?php
     }
     ?>
   </div>
 </section>
-<?php
-  require_once "view/footer.php";
-?>

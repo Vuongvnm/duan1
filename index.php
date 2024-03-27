@@ -20,7 +20,10 @@
           break;
         case 'gio_hang':
           require_once "controller/menu/gio_hang.php";
-          break;  
+          break;   
+        case 'them_gio_hang':
+          require_once "controller/menu/them_gio_hang.php";
+          break;
         case 'dang_ky':
           require_once "controller/menu/dang_ky.php";
           break;
@@ -32,10 +35,8 @@
         /* START OTHERS */
         case 'san_pham_chi_tiet':
           require_once "controller/thuoc_tinh/san_pham_chi_tiet.php";
-          break;
-        case 'them_gio_hang':
-          require_once "controller/menu/them_gio_hang.php";          
-          break;
+          break;  
+        
         /* END OTHERS */
 
         default:

@@ -30,7 +30,7 @@
           <p>Chưa có tài khoản? <a href="#" class="signUpBtn-link">Đăng ký</a></p>
         </div>
         <div class="signUp-link">
-          <p>Quên mật khẩu? <a href="#" class="signUpBtn-link">Thay đổi mật khẩu</a></p>
+          <p>Quên mật khẩu? <a href="#" class="changePassBtn-link">Thay đổi mật khẩu</a></p>
         </div>
         <div class="social-platform">
           <p>Hoặc đăng ký qua</p>
@@ -39,6 +39,9 @@
             <a href="#"><i class="fa-brands fa-google"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
           </div>
+        </div>
+        <div class="signUp-link">
+          <p><a href="index.php">Trở lại shop</a></p>
         </div>
       </form>
     </div>
@@ -67,7 +70,35 @@
           <p>Đã có tài khoản? <a href="#" class="signInBtn-link">Đăng nhập</a></p>
         </div>
         <div class="signUp-link">
-          <p>Quên mật khẩu? <a href="#" class="signUpBtn-link">Thay đổi mật khẩu</a></p>
+          <p>Quên mật khẩu? <a href="#" class="changePassBtn-link">Thay đổi mật khẩu</a></p>
+        </div>
+        <div class="signUp-link">
+          <p><a href="index.php">Trở lại shop</a></p>
+        </div>
+      </form>
+    </div>
+
+    <!-- Quên mật khẩu  -->
+    <div class="form-wrapper forget-pass">
+      <form action="index.php?action=dang_ky" method="post">
+        <h2>Quên mật khẩu</h2>
+        <div class="input-group">
+          <input type="email" name="email" required>
+          <label for="">Email</label>
+        </div>
+        <div class="remember">
+          <label>Nhập email đã dùng để đăng ký!</label>
+        </div>
+        <p id="thong_bao"></p>
+        <button type="submit" name="dang_ky">Nhận mật khẩu</button>
+        <div class="signUp-link">
+          <p>Đã có tài khoản? <a href="#" class="signInBtn-link">Đăng nhập</a></p>
+        </div>
+        <div class="signUp-link">
+          <p>Chưa có tài khoản? <a href="#" class="signUpBtn-link">Đăng ký</a></p>
+        </div>
+        <div class="signUp-link">
+          <p><a href="index.php">Trở lại shop</a></p>
         </div>
       </form>
     </div>

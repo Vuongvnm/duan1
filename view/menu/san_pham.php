@@ -37,7 +37,7 @@
         </div>
         <h4><?=$gia_sp?> VNĐ</h4>
       </div>
-      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+      <a href="index.php?action=them_gio_hang&id_sp=<?=$id_sp?>"><i class="fa-solid fa-cart-shopping cart"></i></a>
     </div>
     <?php
     }
