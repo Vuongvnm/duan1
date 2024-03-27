@@ -7,7 +7,8 @@
   $danh_sach_kich_co = hien_thi_kich_co();
   $danh_sach_mau_sac = danh_sach_mau_sac();
   if(isset($_GET['id_sp']) && ($_GET['id_sp'] > 0)) {
-    $mot_san_pham = mot_san_pham($_GET['id_sp']);
+    $id_sp = $_GET['id_sp'];
+    $mot_san_pham = mot_san_pham($id_sp);
     require_once "view/san_pham/sua_san_pham.php";
   } 
 ?>

@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <section id="page-header" style="background-image: url('./assets/images/about/banner.png')">
   <h2>GIỎ HÀNG</h2>
   <p>ĐẶT HÀNG NGAY ĐỂ NHẬN ƯU ĐÃI!</p>
@@ -16,29 +19,31 @@
     </thead>
     <tbody>
       <?php
-        foreach($_SESSION['gio_hang'] as $gh) {
+      if (isset($_SESSION['gio_hang'])) {
+        foreach ($_SESSION['gio_hang'] as $gh) {
           $ten_sp = $gh['ten_sp'];
           $hinh_anh = $gh['hinh_anh'];
-          $gia_tien = $gh['gia_tien'];
+          $gia_sp = $gh['gia_sp'];
           $so_luong = $gh['so_luong'];
           $hinh_path = "./assets/uploads/" . $hinh_anh;
-          if(is_file($hinh_path)) {
-            $hinh = "<img src='".$hinh_path."' height='80'>";
+          if (is_file($hinh_path)) {
+            $hinh = "<img src='" . $hinh_path . "' height='80'>";
           } else {
             $hinh = "Không có hình ảnh!";
           }
       ?>
-      <tr>
-        <td><a href="#"><i class="fa-solid fa-circle-minus"></i></a></td>
-        <td><img src="<?=$hinh_path?>"></td>
-        <td><?=$ten_sp?></td>
-        <td><?=$gia_sp?> VNĐ</td>
-        <td><input type="number" value="<?=$so_luong?>"></td>
-        <td>$118.19</td>
-      </tr>
-      <?php
+          <tr>
+            <td><a href="#"><i class="fa-solid fa-circle-minus"></i></a></td>
+            <td><img src="<?= $hinh_path ?>"></td>
+            <td><?= $ten_sp ?></td>
+            <td><?= $gia_sp ?> VNĐ</td>
+            <td><input type="number" value="<?= $so_luong ?>"></td>
+            <td>$118.19</td>
+          </tr>
+        <?php
         }
-      ?>
+
+        ?>
     </tbody>
   </table>
 </section>
@@ -68,4 +73,12 @@
     </table>
     <button class="normal">Tiến hành thanh toán</button>
   </div>
+<?php
+      } else {
+        echo "Bạn chưa đặt hàng!";
+      }
+?>
 </section>
+<?php
+  require_once "view/footer.php";
+?>

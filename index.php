@@ -1,8 +1,8 @@
 <?php
-  require_once "view/header.php";
   if($_GET == []) {
     require_once "view/content.php";
   } else {
+    session_start();
     if(isset($_GET['action'])) {
       switch($_GET['action']) {
         /* START MENU */
@@ -29,6 +29,9 @@
         case 'them_gio_hang':
           require_once "controller/menu/them_gio_hang.php";          
           break;
+        case 'dang_nhap':
+          require_once "controller/menu/dang_nhap.php";
+          break;
         /* END OTHERS */
           /* START OTHERS */
           case 'bai_viet_chi_tiet':
@@ -41,5 +44,4 @@
       }
     }
   }
-  require_once "view/footer.php";
 ?>

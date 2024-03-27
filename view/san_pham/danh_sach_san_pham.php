@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <section id="product1" class="section-p1">
   <h2>Featured Products</h2>
   <p>Summer Collection New Modern Design</p>
@@ -132,3 +135,6 @@
     </div>
   </div>
 </section>
+<?php
+  require_once "view/footer.php";
+?>

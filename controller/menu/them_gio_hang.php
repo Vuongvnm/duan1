@@ -1,8 +1,8 @@
 <?php
   require_once "model/menu.php";
-  $mot_san_pham = mot_san_pham($id_sp);
   if(isset($_GET['id_sp']) && ($_GET['id_sp'] > 0)) {
     $id_sp = $_GET['id_sp'];
+    $mot_san_pham = mot_san_pham($id_sp);
     if(!isset($_SESSION['gio_hang'])) {
       $_SESSION['gio_hang'] = [];
       $gio_hang = [

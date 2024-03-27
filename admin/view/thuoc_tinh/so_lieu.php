@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <div class="sales-analytics">
     <h2>Sales Analytics</h2>
     <div class="item online">

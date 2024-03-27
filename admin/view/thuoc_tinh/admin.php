@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <div class="top">
     <button id="menu-btn">
       <span class="material-symbols-outlined">menu</span>
@@ -16,3 +19,6 @@
       </div>
     </div>
   </div>
+  <?
+  require_once "view/footer.php"
+?>

@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <!--hero-->
 <section id="hero">
   <h4>Trade-in-offer</h4>
@@ -6,3 +9,6 @@
   <p>Save more with coupons & up to 70% off!</p>
   <button>Shop Now</button>
 </section>
+<?php
+  require_once "view/footer.php";
+?>

@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <main>
   <?php
   require_once "view/thuoc_tinh/dashboard.php";
@@ -16,8 +19,9 @@
           $hinh = "Không có hình ảnh!";
         }
       ?>
-      <div class="pic">
+      <div class="pic pb-1">
         <img src="<?=$hinh_path?>">
+        <a class="btn btn-warning" href="">Xóa</a>
       </div>
     <?php
     }
@@ -41,3 +45,6 @@
   require_once "view/thuoc_tinh/sales_analytics.php";
   ?>
 </div>
+<?
+  require_once "view/footer.php"
+?>

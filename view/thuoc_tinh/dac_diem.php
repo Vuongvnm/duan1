@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 <section id="feature" class="section-p1">
   <div class="fe-box">
     <img src="./assets/images/features/f1.png"/>
@@ -24,3 +27,6 @@
     <h6>Hộ trợ mọi lúc</h6>
   </div>
 </section>
+<?php
+  require_once "view/footer.php";
+?>

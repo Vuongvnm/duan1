@@ -1,6 +1,9 @@
+<?php
+  require_once "view/header.php";
+?>
 <main>
   <?php
-  require_once "view/thuoc_tinh/dashboard.php";
+  require_once "view/thuoc_tinh/bang_dieu_khien.php";
   ?>
   <div class="recent-orders">
     <h2>Thêm sản phẩm</h2>
@@ -9,8 +12,10 @@
         <option selected>Danh mục</option>
         <?php
         foreach ($danh_sach_danh_muc as $dsdm) {
+          $id_dm = $dsdm['id_dm'];
+          $ten_dm = $dsdm['ten_dm'];
         ?>
-          <option value="<?= $dsdm['id_dm'] ?>"><?= $dsdm['ten_dm'] ?></option>
+          <option value="<?=$id_dm?>"><?=$ten_dm?></option>
         <?php
         }
         ?>
@@ -20,8 +25,10 @@
         <option selected>Màu sắc</option>
         <?php
         foreach ($danh_sach_mau_sac as $dsms) {
+          $id_ms = $dsms['id_ms'];
+          $ten_ms = $dsms['ten_ms'];
         ?>
-          <option value="<?= $dsms['id_ms'] ?>"><?= $dsms['ten_ms'] ?></option>
+          <option value="<?=$id_ms?>"><?=$ten_ms?></option>
         <?php
         }
         ?>
@@ -39,8 +46,10 @@
         <option selected>Kích cỡ</option>
         <?php
         foreach ($hien_thi_kich_co as $kc) {
+          $id_kc = $kc['id_kc'];
+          $kich_co = $kc['kich_co'];
         ?>
-          <option value="<?= $kc['id_kc'] ?>"><?= $kc['kich_co'] ?></option>
+          <option value="<?=$id_kc?>"><?=$kich_co?></option>
         <?php
         }
         ?>
@@ -69,18 +78,13 @@
     </form>
   </div>
 </main>
-<!-- End of main -->
 <div class="right">
   <?php
-  require_once "view/thuoc_tinh/admin.php";
-  ?>
-  <!-- End of top -->
-  <?php
-  require_once "view/thuoc_tinh/recent_updates.php";
-  ?>
-  <!-- End of recent updates -->
-  <?php
-  require_once "view/thuoc_tinh/sales_analytics.php";
+    require_once "view/thuoc_tinh/admin.php";
+    require_once "view/thuoc_tinh/cap_nhat_moi.php";
+    require_once "view/thuoc_tinh/so_lieu.php";
   ?>
 </div>
-</div>
+<?
+  require_once "view/footer.php"
+?>

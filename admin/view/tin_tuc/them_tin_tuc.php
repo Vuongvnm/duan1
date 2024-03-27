@@ -1,6 +1,9 @@
+<?php
+  require_once "view/header.php";
+?>
 <main>
   <?php
-  require_once "view/thuoc_tinh/dashboard.php";
+  require_once "view/thuoc_tinh/bang_dieu_khien.php";
   ?>
   <div class="recent-orders">
     <h2>Thêm tin tức</h2>
@@ -16,18 +19,13 @@
     </form>
   </div>
 </main>
-<!-- End of main -->
 <div class="right">
   <?php
-  require_once "view/thuoc_tinh/admin.php";
-  ?>
-  <!-- End of top -->
-  <?php
-  require_once "view/thuoc_tinh/recent_updates.php";
-  ?>
-  <!-- End of recent updates -->
-  <?php
-  require_once "view/thuoc_tinh/sales_analytics.php";
+    require_once "view/thuoc_tinh/admin.php";
+    require_once "view/thuoc_tinh/cap_nhat_moi.php";
+    require_once "view/thuoc_tinh/so_lieu.php";
   ?>
 </div>
-</div>
+<?php
+  require_once "view/footer.php";
+?>

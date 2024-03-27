@@ -1,3 +1,6 @@
+<?php
+  require_once "view/header.php";
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,3 +47,7 @@
     
 </body>
 </html>
+<?php
+  require_once "view/footer.php";
+?>
+
