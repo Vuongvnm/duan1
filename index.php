@@ -1,48 +1,64 @@
 <?php
-  if($_GET == []) {
-    require_once "view/content.php";
-  } else {
+if ($_GET == []) {
+  require_once "view/content.php";
+} else {
+  if (session_status() === PHP_SESSION_NONE) {
     session_start();
-    if(isset($_GET['action'])) {
-      switch($_GET['action']) {
+  }
+  if (isset($_GET['action'])) {
+    switch ($_GET['action']) {
         /* START MENU */
-        case 'san_pham':
-          require_once "controller/menu/san_pham.php";
-          break;
-        case 'bai_viet':
-          require_once "controller/menu/bai_viet.php";
-          break;
-        case 'gioi_thieu':
-          require_once "view/menu/gioi_thieu.php";
-          break;
-        case 'lien_he':
-          require_once "view/menu/lien_he.php";
-          break;
-        case 'gio_hang':
-          require_once "controller/menu/gio_hang.php";
-          break;   
-        case 'them_gio_hang':
-          require_once "controller/menu/them_gio_hang.php";
-          break;
-        case 'dang_ky':
-          require_once "controller/menu/dang_ky.php";
-          break;
-        case 'dang_nhap':
-          require_once "controller/menu/dang_nhap.php";
-          break;  
+      case 'san_pham':
+        require_once "controller/menu/san_pham.php";
+        break;
+      case 'bai_viet':
+        require_once "controller/menu/bai_viet.php";
+        break;
+      case 'gioi_thieu':
+        require_once "view/menu/gioi_thieu.php";
+        break;
+      case 'lien_he':
+        require_once "view/menu/lien_he.php";
+        break;
+      case 'gio_hang':
+        require_once "controller/menu/gio_hang.php";
+        break;
+      case 'them_gio_hang':
+        require_once "controller/menu/them_gio_hang.php";
+        break;
+      case 'dang_ky':
+        require_once "controller/menu/dang_ky.php";
+        break;
+      case 'dang_nhap':
+        require_once "controller/menu/dang_nhap.php";
+        break;
+      case 'dang_xuat':
+        require_once "controller/menu/dang_xuat.php";
+        break;
+      case 'chinh_sach_bao_mat':
+        require_once "view/menu/chinh_sach_bao_mat.php";
+        break;
+      case 'thong_tin_va_dieu_khoan':
+        require_once "view/menu/thong_tin_va_dieu_khoan.php";
+        break;
+      case 'tro_giup':
+        require_once "view/menu/tro_giup.php";
+        break;
+      case 'FQAs':
+        require_once "view/menu/FQAs.php";
+        break;
         /* END MENU */
-        
+
         /* START OTHERS */
-        case 'san_pham_chi_tiet':
-          require_once "controller/thuoc_tinh/san_pham_chi_tiet.php";
-          break;  
-        
+      case 'san_pham_chi_tiet':
+        require_once "controller/thuoc_tinh/san_pham_chi_tiet.php";
+        break;
+
         /* END OTHERS */
 
-        default:
-          require_once "view/content.php";
-          break;  
-      }
+      default:
+        require_once "view/content.php";
+        break;
     }
   }
-?>
+}

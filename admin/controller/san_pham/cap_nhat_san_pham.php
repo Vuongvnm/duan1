@@ -18,7 +18,9 @@
     $ten_hinh_anh = $_FILES["hinh_anh"]["name"];
     move_uploaded_file($_FILES["hinh_anh"]["tmp_name"], $target_file);
     cap_nhat_san_pham($id_sp, $ten_sp, $kich_co, $hang, $gia_sp, $xuat_xu, $ten_hinh_anh, $so_luong, $ngay_cap_nhat, $ghi_chu, $id_dm, $id_ms);
-    echo "<script type='text/javascript'>alert('Cập nhật thành công!');</script>"; // Chưa hiện thị
   }
-  header('Location: index.php?action=danh_sach_san_pham');
 ?>
+<script>
+  alert('Cập nhật thành công!');
+  window.location.href = 'index.php?action=danh_sach_san_pham';
+</script>

@@ -47,7 +47,7 @@
     </div>
 
     <!-- Đăng ký -->
-    <div class="form-wrapper sign-up">
+    <div class="form-wrapper sign-up bayra">
       <form action="index.php?action=dang_ky" method="post">
         <h2>Đăng ký</h2>
         <div class="input-group">
@@ -79,7 +79,7 @@
     </div>
 
     <!-- Quên mật khẩu  -->
-    <div class="form-wrapper forget-pass">
+    <div class="form-wrapper forget-pass bayra">
       <form action="index.php?action=dang_ky" method="post">
         <h2>Quên mật khẩu</h2>
         <div class="input-group">

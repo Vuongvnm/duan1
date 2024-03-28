@@ -9,7 +9,10 @@ if (isset($_POST['dang_nhap'])) {
     $_SESSION['tai_khoan'] = $dang_nhap;
     // $_SESSION['tai_khoan']['ten_dang_nhap'];
     // $_SESSION['tai_khoan']['mat_khau'];
-    header('Location: index.php');
+    echo "<script>
+      alert('Đăng nhập thành công!');
+      window.location.href = 'index.php';
+    </script>";
   } else {
 ?>
   <script>

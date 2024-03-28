@@ -22,35 +22,8 @@
   </div>
 </section>
 <!--feature-->
-<section id="feature" class="section-p1">
-  <div class="fe-box">
-    <img src="./assets/images/features/f1.png" alt="" />
-    <h6>Giao hàng miễn phí</h6>
-  </div>
-  <div class="fe-box">
-    <img src="./assets/images/features/f2.png" alt="" />
-    <h6>Đặt hàng online</h6>
-  </div>
-  <div class="fe-box">
-    <img src="./assets/images/features/f3.png" alt="" />
-    <h6>Tiết kiệm chi phí</h6>
-  </div>
-  <div class="fe-box">
-    <img src="./assets/images/features/f4.png" alt="" />
-    <h6>Tích điểm mua hàng</h6>
-  </div>
-  <div class="fe-box">
-    <img src="./assets/images/features/f5.png" alt="" />
-    <h6>Dịch vụ thân thiện</h6>
-  </div>
-  <div class="fe-box">
-    <img src="./assets/images/features/f6.png" alt="" />
-    <h6>Hỗ trợ mọi lúc</h6>
-  </div>
-</section>
 <?php
-  require_once "view/thuoc_tinh/thong_tin.php"
-?>
-<?php
+  require_once "view/thuoc_tinh/dac_diem.php";
+  require_once "view/thuoc_tinh/thong_tin.php";
   require_once "view/footer.php";
 ?>

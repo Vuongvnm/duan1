@@ -4,7 +4,9 @@
     $id_dm = $_POST['id_dm'];
     $ten_dm = $_POST['ten_dm'];
     cap_nhat_danh_muc($id_dm, $ten_dm);
-    echo "<script type='text/javascript'>alert('Cập nhật thành công!');</script>"; // Chưa hiện thị
   }
-  header('Location: index.php?action=danh_sach_danh_muc');
-?>
+  ?>
+  <script>
+    alert('Cập nhật thành công!');
+    window.location.href = 'index.php?action=danh_sach_danh_muc';
+  </script>

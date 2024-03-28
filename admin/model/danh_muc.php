@@ -30,4 +30,8 @@
     $sql = "UPDATE danh_muc SET ten_dm = '".$ten_dm."' WHERE id_dm = $id_dm";
     pdo_execute($sql);
   }
+
+  function checkDanhMucTrong($id) {
+    return count(san_pham_id_danh_muc($id)) > 0 ? false : true;
+  }
 ?>
