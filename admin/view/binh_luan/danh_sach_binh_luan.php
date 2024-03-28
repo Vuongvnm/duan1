@@ -11,13 +11,10 @@
     <table class="table_danhmuc">
       <thead>
         <tr>
-          <th>Mã bình luận</th>
-          <th>Nội dung</th>
-          <!-- <th>Ngày tạo</th>
-          <th>Người tạo</th> -->
-          <th>Ẩn bình luận </th>
-          <th colspan="2">Chức năng</th>
-          <th></th>
+          <th class="col-1">Mã bình luận</th>
+          <th class="col-7">Nội dung</th>
+          <th class="col-1">Trạng thái</th>
+          <th class="col-3" colspan="4">Chức năng</th>
         </tr>
       </thead>
       <tbody>
@@ -25,13 +22,22 @@
           foreach($danh_sach_binh_luan as $dsbl) {
         ?>
         <tr>  
-        <td><?=$dsbl['id_bl']?></td>
-          <td><?=$dsbl['noi_dung']?></td>
-          <!-- <td><?=$dsbl['ngay_tao']?></td> -->
-          <!-- <td><?=$dsbl['id_tk']?></td> -->
-          <td><input type="checkbox"name="an_bl"id="an_bl"></td>
-          <td class="primary"><a href="index.php?action=xoa_binh_luan&id_bl=<?=$dsbl['id_bl']?>">Xóa</a></td>
-          <td class="primary"><a href="index.php?action=chi_tiet_bl&id_bl=<?=$dsbl['id_bl']?>">Chi tiết</a></td>
+            <td><?=$dsbl['id_bl']?></td>
+            <td><?=$dsbl['noi_dung']?></td>
+            <td><?=$dsbl['trang_thai']==0?'Ẩn': 'Hiện'?></td>
+            <td class="primary"><a href="index.php?action=xoa_binh_luan&id_bl=<?=$dsbl['id_bl']?>">Xóa</a></td>
+            <?php
+            if ($dsbl['trang_thai']==0) {
+            ?>
+                <td class="primary"><a href="index.php?action=hien_binh_luan&id_bl=<?=$dsbl['id_bl']?>">Hiện</a></td>
+            <?php
+            }else{
+            ?>
+            <td class="primary"><a href="index.php?action=an_binh_luan&id_bl=<?=$dsbl['id_bl']?>">Ẩn</a></td>
+            <?php
+            }
+            ?>
+            <td class="primary"><a href="index.php?action=chi_tiet_bl&id_bl=<?=$dsbl['id_bl']?>">Chi tiết</a></td>
         <?php
         }
         ?>
