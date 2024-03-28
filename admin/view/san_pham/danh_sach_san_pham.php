@@ -43,10 +43,11 @@
           <td><?=$gia_sp?></td>
           <td><img src="<?=$hinh_path?>" width="50" height="50"></td>
           <td><?=$so_luong?></td>
-          <td class="warning"><a href="index.php?action=sua_sp&id_sp=<?=$id_sp?>">Sửa</a></td>
-          <td class="primary"><a href="index.php?action=xoa_sp&id_sp=<?=$id_sp?>">Xóa</a></td>
-          <td class="primary"><a href="index.php?action=chi_tiet_san_pham&id_sp=<?=$id_sp?>">Chi tiết</a></td>
-          <td class="primary"><a href="index.php?action=kho_anh&id_sp=<?=$id_sp?>">Kho ảnh</a></td>
+          <td class="warning">
+            <a class="btn btn-link" href="index.php?action=sua_sp&id_sp=<?=$id_sp?>">Sửa</a>
+            <a class="btn btn-link" href="index.php?action=xoa_sp&id_sp=<?=$id_sp?>">Xóa</a>
+            <a class="btn btn-link" href="index.php?action=chi_tiet_san_pham&id_sp=<?=$id_sp?>">Chi tiết</a>
+            <a class="btn btn-link" href="index.php?action=kho_anh&id_sp=<?=$id_sp?>">Kho ảnh</a></td>
         </tr>
         <?php
         }

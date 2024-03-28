@@ -45,6 +45,7 @@ require_once "view/header.php";
     <div class="form-floating">
       <a href="index.php?action=them_san_pham"><button type="submit" class="btn btn-primary" name="them_moi">Thêm mới</button></a>
       <button class="btn btn-secondary">Hiển thị thêm</button>
+      <a class="btn btn-success" href="index.php?action=danh_sach_danh_muc">Danh sách danh mục</a>
     </div>
   </div>
 </main>
