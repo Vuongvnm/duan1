@@ -57,6 +57,10 @@
         <span class="material-symbols-outlined">confirmation_number</span>
           <h3>Voucher</h3>
         </a>
+        <a href="index.php?action=danh_sach_tai_khoan">
+        <span class="material-symbols-outlined">person</span>
+          <h3>Tài khoản</h3>
+        </a>
         <a href="#">
           <span class="material-symbols-outlined">mail</span>
           <h3>Messages</h3>
