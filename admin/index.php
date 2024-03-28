@@ -160,6 +160,17 @@
           require_once "controller/binh_luan/an_binh_luan.php";   
           break;
         /* END BÌNH LUẬN */
+        /* START Tài Khoản */
+        case 'danh_sach_tai_khoan':
+          require_once "controller/tai_khoan/danh_sach_tai_khoan.php";
+          break;
+        case 'xoa_tai_khoan':
+          require_once "controller/tai_khoan/xoa_tai_khoan.php";
+          break;  
+        case 'chi_tiet_tai_khoan':
+          require_once "controller/tai_khoan/chi_tiet_tai_khoan.php";
+          break; 
+        /* END Tài Khoản*/
         default:
           require_once "view/content.php";
           break;  
