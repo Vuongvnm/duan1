@@ -148,6 +148,18 @@
           require_once "controller/hoa_don/cap_nhat_hoa_don.php";   
           break;
         /* END HÓA ĐƠN */
+
+        /* START Tài Khoản */
+        case 'danh_sach_tai_khoan':
+          require_once "controller/tai_khoan/danh_sach_tai_khoan.php";
+          break;
+        case 'xoa_tai_khoan':
+          require_once "controller/tai_khoan/xoa_tai_khoan.php";
+          break;  
+        case 'chi_tiet_tai_khoan':
+          require_once "controller/tai_khoan/chi_tiet_tai_khoan.php";
+          break; 
+        /* END Tài Khoản*/
         default:
           require_once "view/content.php";
           break;  
