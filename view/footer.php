@@ -1,6 +1,6 @@
 <footer class="section-p1">
   <div class="col">
-    <img src="./assets/images/logo1.png" class="logo">
+    <a href="index.php?action=index.php"><img src="./assets/images/logo1.png" class="logo"></a>
     <h4><strong>Thông tin liên hệ</strong></h4>
     <p><strong>Địa chỉ: </strong>123 Đường A số B, thành phố C</p>
     <p><strong>Điện thoại: </strong>+01 111 2222 333</p>
@@ -24,7 +24,7 @@
     <a href="index.php?action=lien_he">Liên hệ</a>
   </div>
   <div class="col">
-    <h4>Tài khoản của tôi</h4>
+    <h4><strong>Tài khoản của tôi</strong></h4>
     <a href="index.php?action=dang_nhap">Đăng nhập</a>
     <a href="index.php?action=gio_hang">Giỏ hàng</a>
     <a href="index.php?action=san_pham">Sản phẩm</a>
@@ -33,19 +33,22 @@
     <a href="index.php?action=FQAs">FQAs</a>
   </div>
   <div class="col install">
-    <h4>Tải Apps</h4>
+    <h4><strong>Tải Apps</strong> </h4>
     <p>Từ App Store hoặc Google Play</p>
     <div class="row">
       <a href="https://www.apple.com/app-store/" target="_blank"><img src="./assets/images/pay/app.jpg"></a>
       <a href="https://play.google.com/store/games?device=windows&pli=1" target="_blank"><img src="./assets/images/pay/play.jpg""></a>
     </div>
     <p>Secured Payment Getaway</p>
-    <a href="https://www.mastercard.com.vn/vi-vn.html" target="_blank"><img src="./assets/images/pay/pay.png"></a>
-  </div>
-  <div class="copyright">
-    <p>&copy 2024, BusyBees - Vương, Tài, Sáng, Quân</p>
-  </div>
+    <a href=" https://www.mastercard.com.vn/vi-vn.html" target="_blank"><img src="./assets/images/pay/pay.png"></a>
+    </div>
+    <div class="copyright">
+      <p>&copy 2024, BusyBees - Vương, Tài, Sáng, Quân</p>
+    </div>
 </footer>
-<script src="./assets/js/script.js"></script>
 </body>
+
 </html>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="./assets/js/script.js"></script>

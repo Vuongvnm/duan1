@@ -417,14 +417,14 @@ main table tbody tr:last-child td {
   border: none;
 }
 
-main .recent-orders a {
+/* main .recent-orders a {
   color: var(--color-primary);
 }
 
 main .recent-orders a:hover {
   color: var(--color-warning);
   text-decoration: underline;
-}
+} */
 
 /* ==================== RIGHT ==================== */
 

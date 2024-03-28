@@ -28,7 +28,7 @@
           <td><?=$stt?></td>
           <td><?=$id_dm?></td>
           <td><?=$ten_dm?></td>
-          <td class="warning"><a href="index.php?action=sua_dm&id_dm=<?=$id_dm?>">Sửa</a></td>
+          <td class="warning"><a class="btn btn-success" href="index.php?action=sua_dm&id_dm=<?=$id_dm?>">Sửa</a></td>
           <td class="primary"><a href="index.php?action=xoa_dm&id_dm=<?=$id_dm?>" onclick="return confirm('Bạn có muốn xóa không?')">Xóa</a></td>
           <td class="primary"><a href="index.php?action=chi_tiet_danh_muc&id_dm=<?=$id_dm?>">Chi tiết</a></td>
         </tr>
