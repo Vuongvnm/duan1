@@ -22,7 +22,8 @@ require_once "view/header.php";
       </thead>
       <tbody>
         <?php
-        foreach ($_SESSION['gio_hang'] as $gh) {
+        foreach ($duLieuGioHang as $gh) {
+          $tong_tien = $gh['tong_tien'];
           $ten_sp = $gh['ten_sp'];
           $hinh_anh = $gh['hinh_anh'];
           $gia_sp = $gh['gia_sp'];

@@ -35,6 +35,9 @@
           </div>
           <select class="form-select" aria-label="Multiple select example" name="kich_co" required>
             <option value="0" selected>Kích cỡ</option>
+            <?php
+              
+            ?>
             <option value="1">S</option>
             <option value="2">M</option>
             <option value="3">L</option>
@@ -55,9 +58,9 @@
             <label for="floatingInput">Xuất xứ</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="file" class="form-control" id="floatingInput" name="hinh_anh" placeholder="Hình ảnh" value="<?=$hinh_path?>" required>
+            <input type="file" class="form-control" id="floatingInput" name="hinh_anh" placeholder="Hình ảnh" value="<?=$hinh_anh?>" required>
             <label for="floatingInput">Hình ảnh</label>
-            <img src="<?$hinh_path?>" class="img-fluid">
+            <img src="<?=$hinh_path?>" width="300" height="300">
           </div>
           <div class="form-floating mb-3">
             <input type="number" class="form-control" id="floatingInput" name="so_luong" placeholder="Số lượng" value="<?=$so_luong?>" required>
@@ -118,7 +121,7 @@
         <input type="hidden" name="id_sp" value="<?=$id_sp?>">
         <button type="submit" class="btn btn-primary" name="cap_nhat">Cập nhật</button>
         <button type="reset" class="btn btn-secondary">Nhập lại</button>
-        <a href="index.php?action=danh_sach_san_pham"><button type="submit" class="btn btn-success" name="them_moi">Danh sách sản phẩm</button></a>
+        <a class="btn btn-success" href="index.php?action=danh_sach_san_pham">Danh sách sản phẩm</a>
       </div>
     </form>
   </div>
