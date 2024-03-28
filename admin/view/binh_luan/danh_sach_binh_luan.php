@@ -13,8 +13,8 @@
         <tr>
           <th>Mã bình luận</th>
           <th>Nội dung</th>
-          <th>Ngày tạo</th>
-          <th>Người tạo</th>
+          <!-- <th>Ngày tạo</th>
+          <th>Người tạo</th> -->
           <th>Ẩn bình luận </th>
           <th colspan="2">Chức năng</th>
           <th></th>
@@ -27,8 +27,8 @@
         <tr>  
         <td><?=$dsbl['id_bl']?></td>
           <td><?=$dsbl['noi_dung']?></td>
-          <td><?=$dsbl['ngay_tao']?></td>
-          <td><?=$dsbl['id_tk']?></td>
+          <!-- <td><?=$dsbl['ngay_tao']?></td> -->
+          <!-- <td><?=$dsbl['id_tk']?></td> -->
           <td><input type="checkbox"name="an_bl"id="an_bl"></td>
           <td class="primary"><a href="index.php?action=xoa_binh_luan&id_bl=<?=$dsbl['id_bl']?>">Xóa</a></td>
           <td class="primary"><a href="index.php?action=chi_tiet_bl&id_bl=<?=$dsbl['id_bl']?>">Chi tiết</a></td>
